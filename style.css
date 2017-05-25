@@ -1,0 +1,214 @@
+body, head {
+  /*font-family: sans-serif;*/
+  margin: 0
+}
+
+p, li {
+  font-family: "Lato", sans-serif;
+ }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oxygen", sans-serif;
+ }
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+a:hover {
+  color: rgb(22, 148, 227);
+}
+
+hr {
+  border: 1px dashed;
+  margin: 0 auto;
+  width: 97%;
+}
+
+.box {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content {
+  width: 90%;
+  max-width: 1000px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.content p {
+  font-size: 25px;
+}
+
+.content h2 {
+  font-size: 35px;
+}
+
+.material-icons {
+  font-size: 60px !important;
+  background-color: rgba(103, 103, 103, 0.40);
+  border-radius: 50px;
+  padding: 5px;
+}
+
+/* Box 1 - Header */
+header {
+  background-image: url("pictures/background-image.JPG");
+}
+
+#title {
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+  text-shadow: 0.5px 0.5px 1px gray;
+}
+
+#title h1 {
+  font-size: 50px;
+}
+
+#title h2 {
+  font-size: 30px;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+#blog-button {
+  background-color: #e67e22;
+  box-shadow: 0px 5px 0px 0px #CD6509;
+}
+
+#blog-button:hover {
+  background-color: #FF983C;
+}
+
+/* Box 2 - Information */
+
+#information {
+  background-color: rgb(22, 148, 227);
+}
+
+/* Box 3 - Skills */
+#skills {
+  background-color: rgb(38, 209, 140);
+}
+
+#skill-box {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.skill {
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  text-align: center;
+}
+
+#skill-html {
+  background-color: rgb(255, 99, 0);
+  margin-right: 10px;
+}
+
+#skill-css {
+  background-color: rgb(3, 125, 185);
+  margin-right: 10px;
+}
+
+#skill-git {
+  background-color: rgb(131, 54, 36);
+  margin-right: 10px;
+}
+
+#skill-linux {
+  background-color: rgb(10, 170, 165);
+}
+
+.skill-picture {
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+}
+
+#skill-python {
+  background-color: rgb(224, 217, 44);
+}
+
+/* Projects */
+
+#projects {
+  background-color: rgb(252, 157, 10);
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 350px;
+}
+
+.project {
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 7px;
+}
+
+.project h3 {
+  font-size: 19px;
+  color: black;
+  text-align: center;
+}
+
+.project p {
+  font-size: 16px;
+  color: black;
+  margin: 0px 8px;
+}
+
+.project img {
+  width: 100%
+}
+
+.project i {
+  color: black;
+  margin-top: 10px;
+}
+
+#button-up {
+  margin-top: 20px;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  background-color: rgb(22, 148, 227);
+  text-align: center;
+  color: white;
+  padding: 3px;
+}
+
+footer a:hover {
+  color: rgb(5, 107, 171);
+}
