@@ -63,6 +63,10 @@ hr {
   padding: 5px;
 }
 
+.arrow {
+  margin: 7px 0px;
+}
+
 /* Box 1 - Header */
 header {
   background-image: url("pictures/background-image.JPG");
@@ -156,7 +160,7 @@ header {
   background-color: rgb(224, 217, 44);
 }
 
-/* Projects */
+/* Box 4 - Projects */
 
 #projects {
   background-color: rgb(252, 157, 10);
@@ -200,7 +204,7 @@ header {
   margin-top: 20px;
 }
 
-/* Newsletter */
+/* Box 5 -Newsletter */
 
 #newsletter  {
   background-color: rgb(218, 13, 61);
@@ -228,7 +232,7 @@ header {
   width: 76%;
 }
 
-/* Contact */
+/* Box 6 - Contact */
 
 #contact {
   background-color: rgb(63, 85, 142);
@@ -263,7 +267,7 @@ header {
   width: 76%;
 }
 
-/* Social */
+/* Box 7 - Social */
 
 #social {
   background-color: rgb(193, 249, 132);
