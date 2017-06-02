@@ -7,12 +7,30 @@
     <meta name="description" content="My name is Lucas Hild and I love Development and Photography!">
     <meta name="keywords" content="Lucas Hild, Development, Photography, Python">
     <meta name="author" content="Lucas Hild">
+    <meta name="viewport" content="width=device-width">
 
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.lucas-hild.de/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+
   </head>
   <body>
     <header class="box" aria-label="paddy field on bali" id="top">
@@ -20,7 +38,7 @@
         <h1>Lucas Hild</h1>
         <h2>Development and Photography</h2>
       </div>
-      <a id="blog-button" class="button" href="https://blog.lucas-hild.de">My Blog</a>
+      <a id="blog-button" class="button" href="https://blog.lucas-hild.de" target="_blank">My Blog</a>
       <a href="#information"><i class="material-icons">arrow_downward</i></a>
     </header>
 
@@ -58,7 +76,7 @@
       <div id="projects" class="box">
         <div class="content">
           <h2>My Projects</h2>
-          <p>I have already done several projects. Here you can see some them:</p>
+          <p>I have already done several projects. Here you can see some of them:</p>
           <div class="projects-wrapper">
             <div class="project">
               <img src="https://camo.githubusercontent.com/00ad225b6da21a075c5bd54028d262d8f47b9eff/68747470733a2f2f6c61622e6c756361732d68696c642e64652f6769746875622f4c756674646174656e2d4e6f74696669636174696f6e2f73656e736f722d69642e706e67" alt="luftdaten-notification">
@@ -78,6 +96,46 @@
           <center><a href="#top"><i id="button-up" class="material-icons">arrow_upward</i></a></center>
         </div>
       </div>
+
+      <div id="newsletter" class="box">
+        <div class="content">
+          <h2>Subscribe to my Newsletter</h2>
+          <p>You'll receive once a month, a summary of my <a href="https://blog.lucas-hild.de" target="_blank">blog posts</a>. Moreover you'll find out the three best articles, I've read this month. All issues are in German.</p>
+          <form action="https://lanseuo.herokuapp.com/newsletter/subscribe" method="post">
+            <input name="source" value="website" type="hidden">
+            <input name="mail" placeholder="Your Mail" type="text" required><br>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="contact" class="box">
+        <div class="content">
+          <h2>Contact Me</h2>
+          <p>Do you have a question? Contact Me!</p>
+          <form action="https://lanseuo.herokuapp.com/mail-contact" method="post">
+            <input name="name" placeholder="Your Name" type="text" required><br>
+            <input name="mail" placeholder="Your Mail" type="text" required><br>
+            <textarea name="message" placeholder="Your Message" type="text" required></textarea><br>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="social" class="box">
+        <div class="content">
+          <h2>My social profiles</h2>
+          <center>
+            <a href="https://github.com/Lanseuo/" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://blog.lucas-hild.de" target="_blank"><i class="fa fa-wordpress fa-3x" aria-hidden="true"></i></a>
+            <a href="mailto:contact@lucas-hild.de" target="_blank"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+          </center>
+
+        </div>
+      </div>
+
+      <!-- TODO: Add newsletter signup -->
+      <!-- TODO: Add links to social channels -->
     </main>
 
 
