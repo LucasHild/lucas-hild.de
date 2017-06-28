@@ -308,3 +308,39 @@ footer a:hover {
     width: 100% !important;
   }
 }
+
+/* Alert box */
+.alert {
+  margin: auto;
+  width: 75%;
+  padding: 2px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+#contact-success {
+  border: 3px solid rgb(66, 181, 131);
+}
+
+#contact-error {
+  border: 3px solid rgb(218, 13, 61);
+}
+
+.alert p {
+  font-size: 20px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

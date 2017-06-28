@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+
     <!-- Piwik -->
     <script type="text/javascript">
       var _paq = _paq || [];
@@ -113,10 +116,19 @@
         <div class="content">
           <h2>Contact Me</h2>
           <p>Do you have a question? Contact Me!</p>
-          <form action="https://lanseuo.herokuapp.com/mail-contact" method="post">
-            <input name="name" placeholder="Your Name" type="text" required><br>
-            <input name="mail" placeholder="Your Mail" type="text" required><br>
-            <textarea name="message" placeholder="Your Message" type="text" required></textarea><br>
+          <div id="contact-success" class="alert" style="display: none;">
+            <span class="closebtn">&times;</span>
+            <p></p>
+          </div>
+
+          <div id="contact-error" class="alert" style="display: none;">
+            <span class="closebtn">&times;</span>
+            <p></p>
+          </div>
+          <form id="contact-form">
+            <input name="name" id="contact-name" placeholder="Your Name" type="text" required><br>
+            <input name="mail" id="contact-mail" placeholder="Your Mail" type="text" required><br>
+            <textarea name="message" id="contact-message" placeholder="Your Message" type="text" required></textarea><br>
             <button type="submit">Send</button>
           </form>
           <center class="arrow" ><a href="#social"><i class="material-icons">arrow_downward</i></a></center>
@@ -133,9 +145,6 @@
           </center>
         </div>
       </div>
-
-      <!-- TODO: Add newsletter signup -->
-      <!-- TODO: Add links to social channels -->
     </main>
 
 
