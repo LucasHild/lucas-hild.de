@@ -318,11 +318,11 @@ footer a:hover {
   margin-bottom: 15px;
 }
 
-#contact-success {
+#newsletter-success, #contact-success {
   border: 3px solid rgb(66, 181, 131);
 }
 
-#contact-error {
+#newsletter-error, #contact-error {
   border: 3px solid rgb(218, 13, 61);
 }
 
