@@ -166,11 +166,38 @@ header {
   background-color: rgb(252, 157, 10);
 }
 
+#project-tabs {
+  list-style-type: none;
+  width: 100%;
+  margin: 0px !important;
+  color: rgb(252, 157, 10);
+  background-color: white;
+  border-radius: 3px;
+}
+
+.project-tab {
+  display: inline-block;
+  width: 50%;
+  margin: 0 !important;
+  padding: 10px 0px !important;
+  text-align: center;
+}
+
+.project-tab:hover {
+  cursor: pointer;
+  color: rgb(212, 74, 46);
+}
+
+.project-tab.tab-active {
+  background-color: rgb(199, 110, 61);
+}
+
 .projects-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* TODO: Improve grid layout */
   grid-auto-rows: 350px;
+  margin-top: 10px;
 }
 
 .project {
@@ -289,23 +316,50 @@ footer a:hover {
 
 
 /* Mobile View */
-@media(max-width: 768px) {
+@media (max-width: 768px) {
+  .content p, content a, content label {
+    font-size: 20px;
+  }
+
+  .content h2 {
+    font-size: 25px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
   .projects-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 350px;
   }
 
+  #projects .project p {
+    display: none;
+  }
+
   .project {
     margin: 5px 3x;
   }
 
+  input, button {
+    padding: 12px !important;
+    height: auto !important;
+
+  }
+
   #newsletter input {
     width: 100% !important;
+    margin-right: 5px !important;
   }
 
   #newsletter button {
     width: 100% !important;
+  }
+
+  textarea {
+    height: 100px !important;
   }
 }
 
