@@ -69,7 +69,7 @@ hr {
 
 /* Box 1 - Header */
 header {
-  background-image: url("pictures/background-image.JPG");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pictures/background-image-min.JPG");
 }
 
 #title {
@@ -297,7 +297,7 @@ header {
 /* Box 7 - Social */
 
 #social {
-  background-color: rgb(193, 249, 132);
+  background-color: rgb(141, 205, 72);
 }
 
 /* Footer */
