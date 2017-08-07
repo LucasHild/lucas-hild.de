@@ -171,8 +171,18 @@ header {
   width: 100%;
   margin: 0px !important;
   color: rgb(252, 157, 10);
-  background-color: white;
-  border-radius: 3px;
+  background-color: rgb(199, 110, 61);
+  border-radius: 5px;
+}
+
+#project-tab-webdesign {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#project-tab-python {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .project-tab {
@@ -189,7 +199,7 @@ header {
 }
 
 .project-tab.tab-active {
-  background-color: rgb(199, 110, 61);
+  background-color: white;
 }
 
 .projects-wrapper {

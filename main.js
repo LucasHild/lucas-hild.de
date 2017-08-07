@@ -83,16 +83,16 @@ $(document).ready(function () {
 
   // Project tasks
   $('#project-tab-python').click(function () {
-    $('#project-tab-python').removeClass('tab-active');
-    $('#project-tab-webdesign').addClass('tab-active');
+    $('#project-tab-webdesign').removeClass('tab-active');
+    $('#project-tab-python').addClass('tab-active');
 
     $('#projects-webdesign').slideUp(1000);
     $('#projects-python').slideDown(1000);
   });
 
   $('#project-tab-webdesign').click(function () {
-    $('#project-tab-webdesign').addClass('tab-active');
     $('#project-tab-python').removeClass('tab-active');
+    $('#project-tab-webdesign').addClass('tab-active');
 
     $('#projects-python').slideUp(1000);
     $('#projects-webdesign').slideDown(1000);
