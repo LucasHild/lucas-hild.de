@@ -238,6 +238,7 @@ header {
   font-size: 19px;
   color: black;
   text-align: center;
+  margin-top: 210px;
 }
 
 .project p {
@@ -246,8 +247,16 @@ header {
   margin: 0px 8px;
 }
 
-.project img {
-  width: 100%
+.project-image {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 200px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .project i {

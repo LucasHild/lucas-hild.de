@@ -1,182 +1,189 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Lucas Hild - Development and Photography</title>
+<head>
+  <title>Lucas Hild - Development and Photography</title>
 
-    <meta charset="utf-8">
-    <meta name="description" content="My name is Lucas Hild and I love Development and Photography!">
-    <meta name="keywords" content="Lucas Hild, Development, Photography, Python">
-    <meta name="author" content="Lucas Hild">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="description" content="My name is Lucas Hild and I love Development and Photography!">
+  <meta name="keywords" content="Lucas Hild, Development, Photography, Python">
+  <meta name="author" content="Lucas Hild">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="main.js"></script>
-    <script src="newsletter-contact.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="main.js"></script>
+  <script src="newsletter-contact.js"></script>
 
-    <!-- Piwik -->
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//piwik.lucas-hild.de/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', '1']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <!-- End Piwik Code -->
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//piwik.lucas-hild.de/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Piwik Code -->
 
-  </head>
-  <body>
-    <header class="box" aria-label="paddy field on bali" id="top">
-      <div id="title">
-        <h1>Lucas Hild</h1>
-        <h2>Development and Photography</h2>
+</head>
+<body>
+  <header class="box" aria-label="paddy field on bali" id="top">
+    <div id="title">
+      <h1>Lucas Hild</h1>
+      <h2>Development and Photography</h2>
+    </div>
+    <a id="blog-button" class="button" href="https://blog.lucas-hild.de" target="_blank">My Blog</a>
+    <!-- <a class="arrow" href="#information"><i class="material-icons">arrow_downward</i></a> -->
+  </header>
+
+  <main>
+    <section id="information" class="box">
+      <div class="content">
+        <h2>Hey, I'm Lucas Hild</h2>
+        <p>I create web applications with Python.
+          So I am fascinated of back-end development and like creating front-end designs.
+          In my freetime I like climbing, playing the violin and searching for geocaches.
+          My passion is to take photos and record cinematic videos.
+          I write my own <a href="https://blog.lucas-hild.de" target="_blank">blog</a> in German about photography, technology and my life.
+          Feel free to <a href="https://blog.lucas-hild.de" target="_blank">visit</a> it.</p>
+          <!-- <center class="arrow"><a href="#skills"><i class="material-icons">arrow_downward</i></a></center> -->
       </div>
-      <a id="blog-button" class="button" href="https://blog.lucas-hild.de" target="_blank">My Blog</a>
-      <!-- <a class="arrow" href="#information"><i class="material-icons">arrow_downward</i></a> -->
-    </header>
+    </section>
 
-    <main>
-      <section id="information" class="box">
-        <div class="content">
-          <h2>Hey, I'm Lucas Hild</h2>
-          <p>I create web applications with Python.
-            So I am fascinated of back-end development and like creating front-end designs.
-            In my freetime I like climbing, playing the violin and searching for geocaches.
-            My passion is to take photos and record cinematic videos.
-            I write my own <a href="https://blog.lucas-hild.de" target="_blank">blog</a> in German about photography, technology and my life.
-            Feel free to <a href="https://blog.lucas-hild.de" target="_blank">visit</a> it.</p>
-            <!-- <center class="arrow"><a href="#skills"><i class="material-icons">arrow_downward</i></a></center> -->
+    <section id="skills" class="box">
+      <div class="content">
+        <h2>My Skills</h2>
+        <p>I really like learning new skills. So far I have the following skills:</p>
+        <div id="skill-box">
+          <i id="skill-html" class="fa fa-html5 fa-5x skill" aria-hidden="true"></i>
+          <i id="skill-css" class="fa fa-css3 fa-5x skill" aria-hidden="true"></i>
+          <i id="skill-git" class="fa fa-git fa-5x skill" aria-hidden="true"></i>
+          <i id="skill-linux" class="fa fa-linux fa-5x skill" aria-hidden="true"></i>
+          <br>
+          <i id="skill-python"><img id="skill-python" class="skill-picture" src="pictures/python.png" alt="python logo"></i>
         </div>
-      </section>
-
-      <section id="skills" class="box">
-        <div class="content">
-          <h2>My Skills</h2>
-          <p>I really like learning new skills. So far I have the following skills:</p>
-          <div id="skill-box">
-            <i id="skill-html" class="fa fa-html5 fa-5x skill" aria-hidden="true"></i>
-            <i id="skill-css" class="fa fa-css3 fa-5x skill" aria-hidden="true"></i>
-            <i id="skill-git" class="fa fa-git fa-5x skill" aria-hidden="true"></i>
-            <i id="skill-linux" class="fa fa-linux fa-5x skill" aria-hidden="true"></i>
-            <br>
-            <i id="skill-python"><img id="skill-python" class="skill-picture" src="pictures/python.png" alt="python logo"></i>
-          </div>
-          <!-- <center class="arrow"><a href="#projects"><i class="material-icons">arrow_downward</i></a></center> -->
-        </div>
-      </section>
+        <!-- <center class="arrow"><a href="#projects"><i class="material-icons">arrow_downward</i></a></center> -->
+      </div>
+    </section>
 
 
-      <section id="projects" class="box">
-        <div class="content">
-          <h2>My Projects</h2>
-          <p>I have already done several projects. Here you can see some of them:</p>
+    <section id="projects" class="box">
+      <div class="content">
+        <h2>My Projects</h2>
+        <p>I have already done several projects. Here you can see some of them:</p>
 
-          <div id="project-tabs"><li id="project-tab-python" class="project-tab tab-active">Python</li><li id="project-tab-webdesign" class="project-tab">Webdesign</li></div>
+        <div id="project-tabs"><li id="project-tab-python" class="project-tab tab-active">Python</li><li id="project-tab-webdesign" class="project-tab">Webdesign</li></div>
 
-          <div id="projects-python">
-            <div class="projects-wrapper">
+        <div id="projects-python">
+          <div class="projects-wrapper">
 
-              <div class="project">
-                <img src="https://camo.githubusercontent.com/00ad225b6da21a075c5bd54028d262d8f47b9eff/68747470733a2f2f6c61622e6c756361732d68696c642e64652f6769746875622f4c756674646174656e2d4e6f74696669636174696f6e2f73656e736f722d69642e706e67" alt="luftdaten-notification">
-                <h3>Luftdaten-Notification</h3>
-                <p>Receive a notification if the respirable dust exceeds a limit.</p>
-                <center><a href="https://github.com/Lanseuo/Luftdaten-Notification" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></center>
-              </div>
-
+            <div class="project">
+              <div class="project-image" style="background-image: url(pictures/projects/luftdaten-notification.png)"></div>
+              <h3>Luftdaten-Notification</h3>
+              <p>Receive a notification if the respirable dust exceeds a limit.</p>
+              <center><a href="https://github.com/Lanseuo/Luftdaten-Notification" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></center>
             </div>
+
           </div>
+        </div>
 
-          <div id="projects-webdesign" style="display: none;">
-            <div class="projects-wrapper">
+        <div id="projects-webdesign" style="display: none;">
+          <div class="projects-wrapper">
 
-              <div class="project">
-                <img src="pictures/projects/devExamples.png" alt="luftdaten-notification">
-                <h3>devExamples</h3>
-                <p>Website with coding examples.</p>
-                <center><a href="https://devexamples.cf" target="_blank"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a></center>
-              </div>
-
+            <div class="project">
+              <div class="project-image" style="background-image: url(pictures/projects/devExamples.png)"></div>
+              <h3>devExamples</h3>
+              <p>Website with coding examples.</p>
+              <center><a href="https://devexamples.cf" target="_blank"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a></center>
             </div>
-          </div>
+            <div class="project">
+              <div class="project-image" style="background-image: url(pictures/projects/lucas-lab.png)"></div>
+              <h3>Lucas Lab</h3>
+              <p>My webdevelopment lab</p>
+              <center><a href="https://lab.lucas-hild.de" target="_blank"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a></center>
+            </div>
 
-          <!-- <center class="arrow"><a href="#newsletter"><i class="material-icons">arrow_downward</i></a></center> -->
+          </div>
         </div>
-      </section>
 
-      <section id="newsletter" class="box">
-        <div class="content">
-          <h2>Subscribe to my Newsletter</h2>
-          <p>You'll receive once a month, a summary of my <a href="https://blog.lucas-hild.de" target="_blank">blog posts</a>. Moreover you'll find out the three best articles, I've read this month. All issues are in German.</p>
+        <!-- <center class="arrow"><a href="#newsletter"><i class="material-icons">arrow_downward</i></a></center> -->
+      </div>
+    </section>
 
-          <div id="newsletter-success" class="alert" style="display: none;">
-            <span class="closebtn">&times;</span>
-            <p></p>
-          </div>
+    <section id="newsletter" class="box">
+      <div class="content">
+        <h2>Subscribe to my Newsletter</h2>
+        <p>You'll receive once a month, a summary of my <a href="https://blog.lucas-hild.de" target="_blank">blog posts</a>. Moreover you'll find out the three best articles, I've read this month. All issues are in German.</p>
 
-          <div id="newsletter-error" class="alert" style="display: none;">
-            <span class="closebtn">&times;</span>
-            <p></p>
-          </div>
-
-          <form id="newsletter-form">
-            <input id="newsletter-source" name="source" value="website" type="hidden">
-            <input id="newsletter-mail" name="mail" placeholder="Your Mail" type="text" required><br>
-            <button type="submit">Subscribe</button>
-          </form>
-          <!-- <center class="arrow"><a href="#contact"><i class="material-icons">arrow_downward</i></a></center> -->
+        <div id="newsletter-success" class="alert" style="display: none;">
+          <span class="closebtn">&times;</span>
+          <p></p>
         </div>
-      </section>
 
-      <section id="contact" class="box">
-        <div class="content">
-          <h2>Contact Me</h2>
-          <p>Do you have a question? Contact Me!</p>
-
-          <div id="contact-success" class="alert" style="display: none;">
-            <span class="closebtn">&times;</span>
-            <p></p>
-          </div>
-
-          <div id="contact-error" class="alert" style="display: none;">
-            <span class="closebtn">&times;</span>
-            <p></p>
-          </div>
-          <form id="contact-form">
-            <input name="name" id="contact-name" placeholder="Your Name" type="text" required><br>
-            <input name="mail" id="contact-mail" placeholder="Your Mail" type="text" required><br>
-            <textarea name="message" id="contact-message" placeholder="Your Message" type="text" required></textarea><br>
-            <button type="submit">Send</button>
-          </form>
-          <!-- <center class="arrow" ><a href="#social"><i class="material-icons">arrow_downward</i></a></center> -->
+        <div id="newsletter-error" class="alert" style="display: none;">
+          <span class="closebtn">&times;</span>
+          <p></p>
         </div>
-      </section>
 
-      <section id="social" class="box">
-        <div class="content">
-          <h2>My social profiles</h2>
-          <center>
-            <a class="social-button" href="https://github.com/Lanseuo/" target="_blank"><i id="social-github" class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-            <a class="social-button" href="https://blog.lucas-hild.de" target="_blank"><i id="social-blog" class="fa fa-wordpress fa-3x" aria-hidden="true"></i></a>
-            <a class="social-button" href="mailto:contact@lucas-hild.de" target="_blank"><i id="social-mail" class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
-          </center>
+        <form id="newsletter-form">
+          <input id="newsletter-source" name="source" value="website" type="hidden">
+          <input id="newsletter-mail" name="mail" placeholder="Your Mail" type="text" required><br>
+          <button type="submit">Subscribe</button>
+        </form>
+        <!-- <center class="arrow"><a href="#contact"><i class="material-icons">arrow_downward</i></a></center> -->
+      </div>
+    </section>
+
+    <section id="contact" class="box">
+      <div class="content">
+        <h2>Contact Me</h2>
+        <p>Do you have a question? Contact Me!</p>
+
+        <div id="contact-success" class="alert" style="display: none;">
+          <span class="closebtn">&times;</span>
+          <p></p>
         </div>
-      </section>
-    </main>
+
+        <div id="contact-error" class="alert" style="display: none;">
+          <span class="closebtn">&times;</span>
+          <p></p>
+        </div>
+        <form id="contact-form">
+          <input name="name" id="contact-name" placeholder="Your Name" type="text" required><br>
+          <input name="mail" id="contact-mail" placeholder="Your Mail" type="text" required><br>
+          <textarea name="message" id="contact-message" placeholder="Your Message" type="text" required></textarea><br>
+          <button type="submit">Send</button>
+        </form>
+        <!-- <center class="arrow" ><a href="#social"><i class="material-icons">arrow_downward</i></a></center> -->
+      </div>
+    </section>
+
+    <section id="social" class="box">
+      <div class="content">
+        <h2>My social profiles</h2>
+        <center>
+          <a class="social-button" href="https://github.com/Lanseuo/" target="_blank"><i id="social-github" class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+          <a class="social-button" href="https://blog.lucas-hild.de" target="_blank"><i id="social-blog" class="fa fa-wordpress fa-3x" aria-hidden="true"></i></a>
+          <a class="social-button" href="mailto:contact@lucas-hild.de" target="_blank"><i id="social-mail" class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+        </center>
+      </div>
+    </section>
+  </main>
 
 
-    <footer>
-      <p>Copyright ©2017 <a href="https://lucas-hild.de">Lucas Hild</a></p>
-    </footer>
-  </body>
+  <footer>
+    <p>Copyright ©2017 <a href="https://lucas-hild.de">Lucas Hild</a></p>
+  </footer>
+</body>
 </html>
