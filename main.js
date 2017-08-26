@@ -19,8 +19,15 @@ $(document).ready(function () {
   // Hide content (won't be hidden if you have no JS)
   $('.content').css('display', 'none');
 
+  // Check whether anything is visible
+  showContentByScrolling();
+
   // Fade in effect of content
   $(window).scroll(function () {
+    showContentByScrolling();
+  });
+
+  function showContentByScrolling() {
     var viewport = $(window).scrollTop() + $(window).height();
     var sections = ['information', 'skills', 'projects', 'newsletter', 'contact', 'social'];
     for (var i = 0; i < sections.length; i++) {
@@ -30,11 +37,10 @@ $(document).ready(function () {
       // If section is visible
       if (viewport > (rand.top + 350)) {
         $('#' + sections[i] + ' .content').fadeIn(1000);
-        console.log('faded');
       }
     }
 
-  });
+  }
 
   // Hover effect of social buttons
   $('#social-github').hover(function () {
