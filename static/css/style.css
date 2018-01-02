@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Mahee');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+*:focus {
+  outline-style: none;
+  -moz-outline-style: none;
+}
+
+input:required:invalid {
+  outline: none;
+}
+
+p, a {
+  font-family: 'Mukta Mahee', sans-serif;
+  font-size: 1.1em;
+}
+
+main, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.dark-section {
+  background-color: #eeeeee;
+}
+
+.box {
+  width: 70%;
+  margin: 0 auto;
+  padding: 125px 0;
+}
+
+.box p {
+  line-height: 2em;
+}
+
+.box a:hover {
+  color: rgb(21, 144, 219)
+}
+
+.box h2 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.box h3 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.box .section-introduction {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.button {
+  background-color: rgb(21, 144, 219);
+  color: white;
+  padding: 20px 40px;
+  border-radius: 2px;
+}
+
+.button:hover {
+  color: white !important;
+}
+
+/* Alert box */
+.alert {
+  margin: auto;
+  width: 75%;
+  padding: 2px;
+  margin-bottom: 15px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.alert p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.alert .closebtn {
+  margin-left: 15px;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alert .closebtn:hover {
+  color: black;
+}
+
+nav {
+  padding: 0 100px;
+  position: fixed;
+  z-index: 3;
+  transition: background-color 0.2s ease-in-out;
+}
+
+nav.nav-blue {
+  background-color: rgb(21, 144, 219);
+}
+
+nav.nav-blue #nav-links a:hover {
+  color: rgb(226, 226, 226);
+  border-bottom: 1px solid white;
+}
+
+nav h1 {
+  letter-spacing: 0.05em;
+}
+
+nav h1, nav a {
+  line-height: 100px;
+  display: inline;
+  color: white;
+}
+
+nav #nav-links {
+  display: inline-block;
+  float: right;
+}
+
+nav #nav-links a {
+  margin: 0 15px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-size: 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+nav #nav-links a:hover {
+  color: rgb(21, 144, 219);
+  border-bottom: 1px solid rgb(21, 144, 219);
+}
+
+/* TODO: Blur background */
+#header {
+  background: url(/static/img/background_blur.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh;
+  vertical-align: middle;
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 1;
+  color: white;
+  position: relative;
+}
+
+#header-content {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#header #header-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#header #header-content p {
+  font-size: 1.5em;
+}
+
+#header #header-content h1 {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+#header #header-arrow svg {
+  fill: #FFFFFF;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+#blog #blog-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#blog .blog-article {
+  background-color: white;
+  margin: 0 10px;
+}
+
+#blog .blog-article .blog-article-image {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  height: 250px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#blog .blog-article .button {
+  display: none;
+}
+
+/* TODO: Blur background */
+#blog .blog-article .blog-article-image:hover > h3 {
+  display: none;
+}
+
+#blog .blog-article .blog-article-image:hover > .button {
+  display: block;
+}
+
+#blog .blog-article p {
+  margin: 10px 20px;
+}
+
+#blog #blog-article-1 .blog-article-image {
+  background: url(https://blog.lucas-hild.de/wp-content/uploads/2017/11/codeeditor/codeeditor-atom-screenshot-lucas-hild.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#blog #blog-article-2 .blog-article-image {
+  background: url(https://blog.lucas-hild.de/wp-content/uploads/2017/10/hack-to-the-future-2017/httfs-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#blog #blog-article-3 .blog-article-image {
+  background: url(https://blog.lucas-hild.de/wp-content/uploads/2017/09/amerika/DSC_1444.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#blog #button-blog {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#skills #skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#skills #skills-wrapper p {
+  text-align: center;
+}
+
+#skills .skill-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#skills .skill-grid svg {
+  width: 60px !important;
+  display: block;
+  margin: 0 auto;
+  /*height: 128px !important;*/
+}
+
+#skills .skill-grid p {
+  margin: 0
+}
+
+#portfolio #portfolio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#portfolio .portfolio-project {
+  background-color: white;
+  margin: 0 10px;
+}
+
+#portfolio .portfolio-project .portfolio-project-image {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-project .button {
+  display: none;
+}
+
+/* TODO: Blur background */
+#portfolio .portfolio-project .portfolio-project-image:hover > .button {
+  display: block;
+}
+
+#portfolio .portfolio-project .portfolio-project-content {
+  margin: 10px 0;
+}
+
+#portfolio .portfolio-project .portfolio-project-content p {
+  margin: 0px 20px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#portfolio .portfolio-project .portfolio-project-content p i {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+#newsletter form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#newsletter input {
+  border: 0;
+  width: 75%;;
+  height: 50px;
+  margin-bottom: 5px;
+  padding: 4px;
+  text-align: center;
+  background-color: #eeeeee;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#newsletter button {
+  height: 50px;
+  background: rgb(21, 144, 219);
+  border: 0;
+  color: white;
+  width: 75%;
+  cursor: pointer;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+#contact form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact input {
+  border: 0;
+  width: 75%;;
+  height: 50px;
+  margin-bottom: 5px;
+  padding: 4px;
+  text-align: center;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#contact textarea {
+  border: 0;
+  width: 75%;;
+  height: 200px;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: center;
+  background: white;
+  font-family: sans-serif;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#contact button {
+  height: 50px;
+  background: rgb(21, 144, 219);
+  border: 0;
+  color: white;
+  width: 75%;
+  cursor: pointer;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#footer {
+  background-color: rgb(21, 144, 219);
+  padding: 10px 0;
+}
+
+#footer #social-profiles {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#footer #social-profiles a svg {
+  width: 50px;
+  margin: 0 5px;
+}
+
+#footer #copyright {
+  text-align: center;
+  color: white;
+}
