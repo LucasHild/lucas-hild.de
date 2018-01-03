@@ -460,3 +460,103 @@ nav #nav-links a:hover {
   text-align: center;
   color: white;
 }
+
+@media (max-width: 750px) {
+  p, a {
+    font-size: 1em;
+  }
+
+  .box {
+    padding: 50px 0;
+    width: 95%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+  }
+
+  .alert {
+    width: 100%;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  nav h1 {
+    text-align: center;
+    display: block;
+    margin: 0;
+    line-height: 75px;
+  }
+
+  nav #nav-links {
+    display: none;
+  }
+
+  #header {
+    text-align: center;
+  }
+
+  #header #header-content {
+    margin: 0 20px;
+  }
+
+  #header #header-content p {
+    font-size: 1.3em;
+  }
+
+  #header #header-content h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  #header #header-arrow svg {
+    bottom: 25px;
+  }
+
+  #blog #blog-wrapper {
+    display: block;
+  }
+
+  #blog .blog-article {
+    margin: 25px 0;
+  }
+
+  #blog .blog-article .blog-article-image:hover > h3 {
+    display: block;
+  }
+
+  #blog .blog-article .blog-article-image:hover > .button {
+    display: none;
+  }
+
+  #skills #skills-wrapper {
+    display: block;
+  }
+
+  #portfolio #portfolio-wrapper {
+    display: block;
+  }
+
+  #portfolio .portfolio-project {
+    margin: 25px 0;
+  }
+
+  #portfolio .portfolio-project .portfolio-project-image:hover > .button {
+    display: none;
+  }
+
+  #newsletter #newsletter-form input, #newsletter #newsletter-form button {
+    width: 100%;
+  }
+
+  #contact #contact-form input, #contact #contact-form button, #contact #contact-form textarea {
+    width: 100%;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 910px) {
+  nav #nav-links a {
+    margin: 0 1.55px;
+  }
+}
