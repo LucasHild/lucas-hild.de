@@ -214,6 +214,13 @@ nav #nav-links a:hover {
   z-index: 2;
 }
 
+#about-scroll-marker {
+  position: absolute;
+  margin: 0;
+  color: white;
+  top: calc(100vh - 75px);
+}
+
 #blog #blog-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
