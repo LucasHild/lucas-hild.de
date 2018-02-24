@@ -123,7 +123,7 @@ nav.nav-blue {
 }
 
 nav.nav-blue #nav-links a:hover {
-  color: rgb(226, 226, 226);
+  color: white;
   border-bottom: 1px solid white;
 }
 
@@ -257,22 +257,7 @@ nav #nav-links a:hover {
   margin: 10px 20px;
 }
 
-#blog #blog-article-1 .blog-article-image {
-  background: url(https://blog.lucas-hild.de/wp-content/uploads/2017/11/codeeditor/codeeditor-atom-screenshot-lucas-hild.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-#blog #blog-article-2 .blog-article-image {
-  background: url(https://blog.lucas-hild.de/wp-content/uploads/2017/10/hack-to-the-future-2017/httfs-3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-#blog #blog-article-3 .blog-article-image {
-  background: url(https://blog.lucas-hild.de/wp-content/uploads/2017/09/amerika/DSC_1444.JPG);
+#blog .blog-article .blog-article-image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
