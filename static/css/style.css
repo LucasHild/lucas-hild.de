@@ -127,8 +127,17 @@ nav.nav-blue #nav-links a:hover {
   border-bottom: 1px solid white;
 }
 
+nav svg {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  display: none;
+  cursor: pointer;
+}
+
 nav h1 {
   letter-spacing: 0.05em;
+  z-index: 600;
 }
 
 nav h1, nav a {
@@ -153,6 +162,24 @@ nav #nav-links a {
 nav #nav-links a:hover {
   color: rgb(21, 144, 219);
   border-bottom: 1px solid rgb(21, 144, 219);
+}
+
+nav #mobile-nav-window {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(21, 144, 219);
+  z-index: 500;
+  top: 0;
+}
+
+nav #mobile-nav-window-links a {
+  display: block;
+  text-align: left;
+  line-height: 50px;
+  padding-left: 30px;
+  text-transform: uppercase;
 }
 
 /* TODO: Blur background */
@@ -459,7 +486,7 @@ nav #nav-links a:hover {
   }
 
   .box {
-    padding: 50px 0;
+    padding: 85px 0;
     width: 95%;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -472,6 +499,10 @@ nav #nav-links a:hover {
 
   nav {
     padding: 0;
+  }
+
+  nav svg {
+    display: block;
   }
 
   nav h1 {
@@ -503,7 +534,7 @@ nav #nav-links a:hover {
   }
 
   #header #header-arrow svg {
-    bottom: 25px;
+    bottom: 50px;
   }
 
   #blog #blog-wrapper {
@@ -547,8 +578,8 @@ nav #nav-links a:hover {
   }
 }
 
-@media (min-width: 751px) and (max-width: 910px) {
+@media (min-width: 751px) and (max-width: 925px) {
   nav #nav-links a {
-    margin: 0 1.55px;
+    margin: 0 0px;
   }
 }

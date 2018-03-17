@@ -5,6 +5,11 @@ $(window).ready(function() {
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
+    // mobile nav
+    if (event.target.dataset.noSmoothScroll) {
+      return true
+    }
+
     // On-page links
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
