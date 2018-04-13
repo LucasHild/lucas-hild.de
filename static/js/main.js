@@ -16,7 +16,7 @@ $(window).ready(function() {
     }
   });
 
-  $('#mail-link').attr('href', 'mailto:co' + 'ntact@lu' + 'cas.hild.def'.substring(0, 12 - 1));
+  $('#mail-link').attr('href', 'mailto:co' + 'ntact@lu' + 'cas-hild.def'.substring(0, 12 - 1));
 
   $('#open-mobile-nav').click(function() {
     $('#mobile-nav-window').animate({width:'toggle'},350);
