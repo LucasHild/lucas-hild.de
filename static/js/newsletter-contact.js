@@ -1,6 +1,7 @@
 $(document).ready(function () {
   // Newsletter form
-  $('#newsletter-form').on('submit', function (event) {
+  $('#newsletter-form').on('submit', function(event) {
+    $('#newsletter-spinner').show();
 
     // Hide (old) alert boxes
     $('#newsletter-success').hide();
@@ -19,6 +20,8 @@ $(document).ready(function () {
       })
 
       .done(function (data) {
+        $('#newsletter-spinner').hide();
+
         if (data.error) {
           $('#newsletter-alert').css('border', '3px solid rgb(218, 13, 61)');
           $('#newsletter-alert p').text(data.error);
@@ -38,6 +41,7 @@ $(document).ready(function () {
 
   // Contact Form
   $('#contact-form').on('submit', function (event) {
+    $('#contact-spinner').show();
 
     // Hide (old) alert boxes
     $('#contact-success').hide();
@@ -57,6 +61,7 @@ $(document).ready(function () {
       })
 
       .done(function (data) {
+        $('#contact-spinner').hide();
         if (data.error) {
           $('#contact-alert').css('border', '3px solid rgb(218, 13, 61)');
           $('#contact-alert p').append(data.error);
