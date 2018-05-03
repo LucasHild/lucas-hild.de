@@ -116,6 +116,7 @@ nav {
   position: fixed;
   z-index: 3;
   transition: background-color 0.2s ease-in-out;
+  width: 100%;
 }
 
 nav.nav-blue {
@@ -478,6 +479,18 @@ nav #mobile-nav-window-links a {
 #footer #copyright {
   text-align: center;
   color: white;
+}
+
+#footer .footer-links {
+    text-align: center;
+}
+
+#footer .footer-links a {
+    color: white;
+}
+
+#footer .footer-links a:hover {
+    color: black;
 }
 
 @media (max-width: 750px) {
