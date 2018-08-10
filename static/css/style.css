@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Mukta+Mahee");
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+
+:root {
+    --primary-color: rgb(21, 144, 219);
+    --pimary-color-dark: rgb(19, 129, 196);
+}
+
 *:focus {
     outline-style: none;
     -moz-outline-style: none;
@@ -57,7 +63,7 @@ a {
 }
 
 .box a:hover {
-    color: rgb(21, 144, 219);
+    color: var(--primary-color);
 }
 
 .box h2 {
@@ -78,7 +84,7 @@ a {
 }
 
 .button {
-    background-color: rgb(21, 144, 219);
+    background-color: var(--primary-color);
     color: white;
     padding: 20px 40px;
     border-radius: 2px;
@@ -86,6 +92,7 @@ a {
 
 .button:hover {
     color: white !important;
+    background-color: var(--pimary-color-dark);
 }
 
 /* Alert box */
@@ -128,7 +135,7 @@ nav {
 }
 
 nav.nav-blue {
-    background-color: rgb(21, 144, 219);
+    background-color: var(--primary-color);
 }
 
 nav.nav-blue #nav-links a:hover {
@@ -170,8 +177,8 @@ nav #nav-links a {
 }
 
 nav #nav-links a:hover {
-    color: rgb(21, 144, 219);
-    border-bottom: 1px solid rgb(21, 144, 219);
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 nav #mobile-nav-window {
@@ -179,7 +186,7 @@ nav #mobile-nav-window {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(21, 144, 219);
+    background-color: var(--primary-color);
     z-index: 500;
     top: 0;
 }
@@ -212,11 +219,38 @@ nav #mobile-nav-window-links a {
 
 #header-content {
     background-size: cover;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+.vsc-initialized #header-content {
+    display: flex;
+    animation: wave 1.5s linear;
+}
+
+@keyframes wave {
+	0% {
+		transform: translateY(-100vh);
+    }
+    
+    25% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+		transform: translateY(10px);
+    }
+    
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+		transform: initial;
+	}
 }
 
 #header #header-nav {
@@ -424,7 +458,7 @@ nav #mobile-nav-window-links a {
 
 #newsletter button {
     height: 50px;
-    background: rgb(21, 144, 219);
+    background: var(--primary-color);
     border: 0;
     color: white;
     width: 75%;
@@ -476,7 +510,7 @@ nav #mobile-nav-window-links a {
 
 #contact button {
     height: 50px;
-    background: rgb(21, 144, 219);
+    background: var(--primary-color);
     border: 0;
     color: white;
     width: 75%;
@@ -490,7 +524,7 @@ nav #mobile-nav-window-links a {
 }
 
 #footer {
-    background-color: rgb(21, 144, 219);
+    background-color: var(--primary-color);
     padding: 10px 0;
 }
 
