@@ -1,48 +1,59 @@
-$(document).ready(function () {
-    // Contact Form
-    $('#contact-form').on('submit', function (event) {
-        $('#contact-spinner').show();
-
-        // Hide (old) alert boxes
-        $('#contact-success').hide();
-        $('#contact-error').hide();
-        $('#contact-success p').text('');
-        $('#contact-error p').text('');
-
-        // Post data to api
-        $.ajax({
-            data: {
-                name: $('#contact-name').val(),
-                mail: $('#contact-mail').val(),
-                message: $('#contact-message').val(),
-            },
-            type: 'POST',
-            url: 'https://lanseuo.herokuapp.com/mail-contact',
+document.addEventListener('DOMContentLoaded', function () {
+    // getElementsByClassName returns HTMLCollection (not iterable)
+    [...document.getElementsByClassName('closebtn')].forEach(closeButton => {
+        console.log(closeButton);
+        closeButton.addEventListener('click', function () {
+            closeButton.parentElement.style.opacity = 0;
+            closeButton.parentElement.style.display = 'none';
         })
+    })
 
-            .done(function (data) {
-                $('#contact-spinner').hide();
-                if (data.error) {
-                    $('#contact-alert').css('border', '3px solid rgb(218, 13, 61)');
-                    $('#contact-alert p').append(data.error);
-                } else if (data.success == 'sent') {
-                    $('#contact-alert').css('border', '3px solid rgb(66, 181, 131)');
-                    $('#contact-alert p').append('Message sent successfully!');
-
-                    // Clear input fields
-                    $('#contact-name').val('');
-                    $('#contact-mail').val('');
-                    $('#contact-message').val('');
-                }
-                $('#contact-alert').fadeIn(500);
-                $('#contact-alert').css('display', 'block');
-            });
-
+    // Contact Form
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
-    });
 
-    // Close alert if button (x) is pressed
-    $('.closebtn').click(function () {
-        $(this).parent().fadeOut(500);
+        let contactSpinner = document.getElementById('contact-spinner');
+        let contactAlert = document.getElementById('contact-alert');
+        let contactAlertText = document.querySelector('#contact-alert p');
+
+        contactSpinner.style.display = 'block';
+        contactAlert.style.opacity = 0;
+        contactAlert.style.display = 'none';
+
+        let contactName = document.getElementById('contact-name')
+        let contactMail = document.getElementById('contact-mail')
+        let contactMessage = document.getElementById('contact-message')
+
+        let formData = new FormData();
+        formData.append('name', contactName.value)
+        formData.append('mail', contactMail.value)
+        formData.append('message', contactMessage.value)
+
+        fetch('https://lanseuo.herokuapp.com/mail-contact', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                contactSpinner.style.display = 'none'
+
+                if (data.error) {
+                    contactAlert.style.border = '3px solid rgb(218, 13, 61)'
+                    contactAlertText.innerText = data.error
+                } else if (data.success == 'sent') {
+                    contactAlert.style.border = '3px solid rgb(66, 181, 131)'
+                    contactAlertText.innerText = 'Die Nachricht wurde gesendet!'
+
+                    contactName.value = ''
+                    contactMail.value = ''
+                    contactMessage.value = ''
+                }
+
+                contactAlert.style.display = 'block';
+                contactAlert.style.opacity = '1';
+            })
+            .catch(e => {
+                throw e;
+            })
     });
 });

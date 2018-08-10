@@ -1,34 +1,30 @@
-$(window).ready(function () {
-    // Fade in and out header arrow
-    setInterval(function () {
-        $('#header-arrow').fadeOut();
-        setTimeout(function () {
-            $('#header-arrow').fadeIn();
-        }, 250)
-    }, 2000);
+addEventListener('scroll', onScroll);
 
-    $(window).scroll(function (event) {
-        $('nav').css('position', 'fixed');
-        if ($(window).scrollTop() > 69) {
-            $('nav').addClass('nav-blue')
-        } else {
-            $('nav').removeClass('nav-blue')
-        }
-    });
+function onScroll() {
+    let nav = document.querySelector('nav');
+    nav.style.position = 'fixed';
 
-    $('#mail-link').attr('href', 'mailto:co' + 'ntact@lu' + 'cas-hild.def'.substring(0, 12 - 1));
+    if (window.scrollY > 69) {
+        nav.classList.add('nav-blue')
+    } else {
+        nav.classList.remove('nav-blue');
+    }
+}
 
-    $('#open-mobile-nav').click(function () {
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('mail-link').href = 'mailto:co' + 'ntact@lu' + 'cas-hild.def'.substring(0, 12 - 1);
+
+    document.getElementById('open-mobile-nav').addEventListener('click', function () {
         $('#mobile-nav-window').animate({ width: 'toggle' }, 350);
-        // $('#mobile-nav-window').addClass('mobile-nav-window-open');
-    });
-
-    $('#close-mobile-nav').click(function () {
-        // $('#mobile-nav-window').removeClass('mobile-nav-window-open');
-        $('#mobile-nav-window').animate({ width: 'toggle' }, 350);
-    });
-
-    $('#mobile-nav-window-links a').click(function () {
-        $('#mobile-nav-window').hide();
     })
-});
+
+    document.getElementById('close-mobile-nav').addEventListener('click', function () {
+        $('#mobile-nav-window').animate({ width: 'toggle' }, 350);
+    });
+
+    document.querySelectorAll('#mobile-nav-window-links a').forEach(link => {
+        link.addEventListener('click', function () {
+            document.getElementById('mobile-nav-window').style.display = null;
+        })
+    })
+}, false);
