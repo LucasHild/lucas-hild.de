@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // getElementsByClassName returns HTMLCollection (not iterable)
     [...document.getElementsByClassName('closebtn')].forEach(closeButton => {
-        console.log(closeButton);
         closeButton.addEventListener('click', function () {
             closeButton.parentElement.style.opacity = 0;
             closeButton.parentElement.style.display = 'none';
@@ -30,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
         formData.append('message', contactMessage.value)
 
         fetch('https://lanseuo.herokuapp.com/mail-contact', {
-            method: 'POST',
-            body: formData
-        })
+                method: 'POST',
+                body: formData
+            })
             .then(response => response.json())
             .then(data => {
                 contactSpinner.style.display = 'none'

@@ -12,14 +12,20 @@ function onScroll() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('body').classList.add('vsc-initialized');
+
     document.getElementById('mail-link').href = 'mailto:co' + 'ntact@lu' + 'cas-hild.def'.substring(0, 12 - 1);
 
     document.getElementById('open-mobile-nav').addEventListener('click', function () {
-        $('#mobile-nav-window').animate({ width: 'toggle' }, 350);
+        $('#mobile-nav-window').animate({
+            width: 'toggle'
+        }, 350);
     })
 
     document.getElementById('close-mobile-nav').addEventListener('click', function () {
-        $('#mobile-nav-window').animate({ width: 'toggle' }, 350);
+        $('#mobile-nav-window').animate({
+            width: 'toggle'
+        }, 350);
     });
 
     document.querySelectorAll('#mobile-nav-window-links a').forEach(link => {
