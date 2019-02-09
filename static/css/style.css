@@ -55,7 +55,7 @@ a {
 }
 
 .dark-section {
-    background-color: #eeeeee;
+    background-color: white;
 }
 
 .box {
@@ -93,12 +93,22 @@ a {
     background-color: var(--primary-color);
     color: white;
     padding: 20px 40px;
-    border-radius: 2px;
+
 }
 
 .button:hover {
     color: white !important;
     background-color: var(--pimary-color-dark);
+}
+
+
+.button, input, textarea {
+    border-radius: 2px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button:hover, input:focus, textarea:focus {
+    transform: scale(1.02);
 }
 
 /* Alert box */
@@ -262,12 +272,6 @@ nav #mobile-nav-window-links a {
     top: 0;
     left: 0;
     width: 100%;
-    -webkit-box-sizing: border-box;
-    /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
-    box-sizing: border-box;
-    /* Opera/IE 8+ */
 }
 
 #header #header-content p {
@@ -294,7 +298,7 @@ nav #mobile-nav-window-links a {
 }
 
 #header #header-arrow svg {
-    fill: #ffffff;
+    fill: white;
     width: 75px;
     height: 75px;
     margin: 0 auto;
@@ -328,12 +332,6 @@ nav #mobile-nav-window-links a {
     padding: 10px;
     width: 100%;
     height: 250px;
-    -webkit-box-sizing: border-box;
-    /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
-    box-sizing: border-box;
-    /* Opera/IE 8+ */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -370,40 +368,39 @@ nav #mobile-nav-window-links a {
     text-align: center;
 }
 
-#skills #skills-wrapper {
+#languages #languages-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
+    place-items: center;
 }
 
-#skills #skills-wrapper p {
-    text-align: center;
+#languages svg {
+    height: 200px;
 }
 
-#skills .skill-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+#languages p {
+    text-align: center
 }
 
-#skills .skill-grid svg {
-    width: 60px !important;
-    display: block;
-    margin: 0 auto;
-    /*height: 128px !important;*/
+#languages-wrapper a {
+    transition: transform 0.5s ease-in-out;
+    animation: languagezoon 2s infinite;
 }
 
-#skills .skill-grid p {
-    margin: 0;
-}
+@keyframes languagezoon {
+    0%, 40%, 100% {transform: scale(1.0);}
+    20% {transform: scale(1.02)}
+  }
 
 #portfolio #portfolio-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
 }
 
 #portfolio .portfolio-project {
     background-color: white;
-    margin: 0 10px;
 }
 
 #portfolio .portfolio-project .portfolio-project-image {
@@ -411,12 +408,6 @@ nav #mobile-nav-window-links a {
     padding: 10px;
     width: 100%;
     height: 200px;
-    -webkit-box-sizing: border-box;
-    /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
-    box-sizing: border-box;
-    /* Opera/IE 8+ */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -465,13 +456,7 @@ nav #mobile-nav-window-links a {
     margin-bottom: 5px;
     padding: 4px;
     text-align: center;
-    background-color: #eeeeee;
-    -webkit-box-sizing: border-box;
-    /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
-    box-sizing: border-box;
-    /* Opera/IE 8+ */
+    background-color: white;
 }
 
 #newsletter button {
@@ -481,12 +466,6 @@ nav #mobile-nav-window-links a {
     color: white;
     width: 75%;
     cursor: pointer;
-    -webkit-box-sizing: border-box;
-    /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
-    box-sizing: border-box;
-    /* Opera/IE 8+ */
 }
 
 #contact form {
@@ -501,15 +480,10 @@ nav #mobile-nav-window-links a {
     margin-bottom: 5px;
     padding: 4px;
     text-align: center;
-    -webkit-box-sizing: border-box;
-    /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
-    box-sizing: border-box;
-    /* Opera/IE 8+ */
 }
 
 #contact textarea {
+    resize: vertical;
     border: 0;
     width: 75%;
     height: 200px;
@@ -518,12 +492,6 @@ nav #mobile-nav-window-links a {
     text-align: center;
     background: white;
     font-family: sans-serif;
-    -webkit-box-sizing: border-box;
-    /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
-    box-sizing: border-box;
-    /* Opera/IE 8+ */
 }
 
 #contact button {
@@ -533,12 +501,6 @@ nav #mobile-nav-window-links a {
     color: white;
     width: 75%;
     cursor: pointer;
-    -webkit-box-sizing: border-box;
-    /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
-    box-sizing: border-box;
-    /* Opera/IE 8+ */
 }
 
 #footer {
@@ -552,8 +514,13 @@ nav #mobile-nav-window-links a {
 }
 
 #footer #social-profiles a svg {
+    fill: white;
     width: 50px;
     margin: 0 5px;
+}
+
+#footer #social-profiles a svg:hover {
+    fill: black !important;
 }
 
 #footer #copyright {
@@ -582,9 +549,6 @@ nav #mobile-nav-window-links a {
     .box {
         padding: 85px 0;
         width: 95%;
-        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-        -moz-box-sizing: border-box; /* Firefox, other Gecko */
-        box-sizing: border-box; /* Opera/IE 8+ */
     }
 
     .alert {
@@ -642,12 +606,14 @@ nav #mobile-nav-window-links a {
     #blog .blog-article .blog-article-image:hover > h3 {
         display: block;
     }
+
     #blog .blog-article .blog-article-image:hover > .button {
         display: none;
     }
 
-    #skills #skills-wrapper {
-        display: block;
+    #languages svg {
+        height: 100px;
+        width: 100px;
     }
 
     #portfolio #portfolio-wrapper {
@@ -677,12 +643,6 @@ nav #mobile-nav-window-links a {
 @media (min-width: 751px) and (max-width: 925px) {
     nav #nav-links a {
         margin: 0 0px;
-    }
-}
-
-@media (min-width: 751px) and (max-width: 1175px) {
-    #skills #skills-wrapper {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
