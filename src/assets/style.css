@@ -1,0 +1,35 @@
+
+@import url("https://fonts.googleapis.com/css?family=Mukta+Mahee");
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+
+:root {
+    --primary-color: rgb(21, 144, 219);
+    --pimary-color-dark: rgb(19, 129, 196);
+}
+
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p, a, li {
+    font-family: "Mukta Mahee", sans-serif;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: "Fjalla One", sans-serif;
+}

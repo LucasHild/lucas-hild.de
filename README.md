@@ -1,16 +1,21 @@
 # lucas-hild.de
 
-![](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+## Project setup
+```
+npm install
+```
 
-My personal website and portfolio
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-![Screenshot](https://raw.githubusercontent.com/lanseuo/lucas-hild.de/master/screenshot.png)
+### Compiles and minifies for production
+```
+npm run build
+```
 
-## Made with
-
-- [jQuery](http://jquery.com/) - JavaScript library
-
-## Meta
-
-Lucas Hild - [https://lucas-hild.de](https://lucas.hild.de)  
-This project is licensed under the MIT License - see the LICENSE file for details
+### Lints and fixes files
+```
+npm run lint
+```
