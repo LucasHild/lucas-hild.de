@@ -1,5 +1,5 @@
 <template>
-    <div class="header" :style="`background-image: url(${require('@/assets/header-background.jpg')})`">
+    <div class="header" :style="`background-image: url(${require('@/assets/images/header-background.jpg')})`">
         <div class="content">
             <p>Hi, I'm</p>
             <h1>Lucas</h1>

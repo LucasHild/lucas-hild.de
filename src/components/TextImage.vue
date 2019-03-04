@@ -13,12 +13,7 @@
 export default {
     name: 'text-image',
 
-    props: { image: String, inversed: Boolean },
-
-    created() {
-        console.log("'" + this.image + "'");
-
-    }
+    props: { image: String, inversed: Boolean }
 }
 </script>
 
