@@ -11,6 +11,11 @@
             <h2>Programming is my passion</h2>
             <p>I learned to program with my Raspberry Pi back when I was 14 years old. Since then I learned several programming languages and developed some side projects. Currently I am developing in Python, JavaScript (with Vue.js) and Go.</p>
         </TextImage>
+
+        <TextImage :image="require('@/assets/images/schoolsen.webp')">
+            <h2>schoolsen</h2>
+            <p>In 2018 three friends and me founded a German startup called schoolsen. We provide a platform to schools that helps students to gain information about their school comfortably using our app.</p>
+        </TextImage>
     </div>
 </template>
 
