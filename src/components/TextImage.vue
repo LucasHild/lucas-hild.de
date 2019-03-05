@@ -22,7 +22,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     min-height: 80vh;
-    margin: 50px 0;
+    padding: 0;
 }
 
 .text-image.inversed .image {

@@ -16,16 +16,19 @@
             <h2>schoolsen</h2>
             <p>In 2018 three friends and me founded a German startup called schoolsen. We provide a platform to schools that helps students to gain information about their school comfortably using our app.</p>
         </TextImage>
+
+        <Projects/>
     </div>
 </template>
 
 <script>
 import Header from '@/components/Header'
 import TextImage from '@/components/TextImage'
+import Projects from '@/components/Projects'
 
 export default {
     name: 'home',
 
-    components: { Header, TextImage }
+    components: { Header, TextImage, Projects }
 }
 </script>
