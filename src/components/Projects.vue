@@ -3,20 +3,38 @@
         <h2>My recent Projects</h2>
 
         <div class="grid">
-            <Project :image="require('@/assets/images/projects/schoolsen.webp')" color="#008a75" text="Lorem ipsum dolor sit amet consectetur adipisicing." link="https://schoolsen.de"/>
-            <Project :image="require('@/assets/images/projects/schoolsen.webp')" color="blue" text="Lorem ipsum dolor sit amet consectetur adipisicing." link="https://schoolsen.de"/>
-            <Project :image="require('@/assets/images/projects/schoolsen.webp')" color="#008a75" text="Lorem ipsum dolor sit amet consectetur adipisicing." link="https://schoolsen.de"/>
+            <Project
+                :image="require('@/assets/images/projects/schoolsen.webp')"
+                color="var(--color-green)"
+                text="Lorem ipsum dolor sit amet consectetur adipisicing."
+                link="https://schoolsen.de"
+            />
+            <Project
+                :image="require('@/assets/images/projects/schoolsen.webp')"
+                color="var(--color-blue)"
+                text="Lorem ipsum dolor sit amet consectetur adipisicing."
+                link="https://schoolsen.de"
+            />
+            <Project
+                :image="require('@/assets/images/projects/schoolsen.webp')"
+                color="var(--color-red)"
+                text="Lorem ipsum dolor sit amet consectetur adipisicing."
+                link="https://schoolsen.de"
+            />
         </div>
+
+        <ButtonComponent text="More on GitHub" href="https://github.com/Lanseuo"/>
     </section>
 </template>
 
 <script>
+import ButtonComponent from '@/components/ButtonComponent'
 import Project from '@/components/Project'
 
 export default {
     name: 'projects',
 
-    components: { Project }
+    components: { Project, ButtonComponent }
 }
 </script>
 

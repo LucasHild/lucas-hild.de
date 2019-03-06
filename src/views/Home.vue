@@ -15,6 +15,7 @@
         <TextImage :image="require('@/assets/images/schoolsen.webp')">
             <h2>schoolsen</h2>
             <p>In 2018 three friends and me founded a German startup called schoolsen. We provide a platform to schools that helps students to gain information about their school comfortably using our app.</p>
+            <ButtonComponent text="Visit schoolsen" href="https://schoolsen.de" color="var(--color-green)"/>
         </TextImage>
 
         <Projects/>
@@ -25,10 +26,11 @@
 import Header from '@/components/Header'
 import TextImage from '@/components/TextImage'
 import Projects from '@/components/Projects'
+import ButtonComponent from '@/components/ButtonComponent'
 
 export default {
     name: 'home',
 
-    components: { Header, TextImage, Projects }
+    components: { Header, TextImage, Projects, ButtonComponent }
 }
 </script>
