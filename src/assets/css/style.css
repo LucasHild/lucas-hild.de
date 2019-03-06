@@ -3,8 +3,11 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One");
 
 :root {
-    --primary-color: rgb(21, 144, 219);
-    --pimary-color-dark: rgb(19, 129, 196);
+    --color-blue: #077187;
+    --color-light-blue: #93b7be;
+    --color-red: #db504a;
+    --color-yellow: #f4d35e;
+    --color-green: #008575;
 }
 
 * {
@@ -14,12 +17,12 @@
 }
 
 body {
+    font-family: "Mukta Mahee", sans-serif;
     margin: 0;
     padding: 0;
 }
 
 p, a, li {
-    font-family: "Mukta Mahee", sans-serif;
     font-size: 1.1em;
 }
 
