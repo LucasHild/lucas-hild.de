@@ -19,6 +19,12 @@
         </TextImage>
 
         <Projects/>
+
+        <TextImage inversed :image="require('@/assets/images/blog.webp')">
+            <h2>Blog</h2>
+            <p>On my German blog is write mostly about software development and technology.</p>
+            <ButtonComponent text="Visit my Blog" href="https://blog.lucas-hild.de" color="var(--color-red)"/>
+        </TextImage>
     </div>
 </template>
 
