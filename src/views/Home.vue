@@ -23,7 +23,8 @@
         <TextImage inversed :image="require('@/assets/images/blog.webp')">
             <h2>Blog</h2>
             <p>On my German blog is write mostly about software development and technology.</p>
-            <ButtonComponent text="Visit my Blog" href="https://blog.lucas-hild.de" color="var(--color-red)"/>
+            <BlogPosts/>
+            <ButtonComponent text="Read more articles" href="https://blog.lucas-hild.de" color="var(--color-red)"/>
         </TextImage>
     </div>
 </template>
@@ -33,10 +34,11 @@ import Header from '@/components/Header'
 import TextImage from '@/components/TextImage'
 import Projects from '@/components/Projects'
 import ButtonComponent from '@/components/ButtonComponent'
+import BlogPosts from '@/components/BlogPosts'
 
 export default {
     name: 'home',
 
-    components: { Header, TextImage, Projects, ButtonComponent }
+    components: { Header, TextImage, Projects, ButtonComponent, BlogPosts }
 }
 </script>
