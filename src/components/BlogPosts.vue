@@ -40,10 +40,9 @@ export default {
 .post {
     background: #f5f4f4;
     display: grid;
-    grid-template-columns: 3fr 4fr;
+    grid-template-columns: 175px 1fr;
     grid-gap: 10px;
     margin: 10px 0;
-    height: 200px;
 }
 
 .image {
@@ -53,11 +52,22 @@ export default {
 
 .title {
     font-weight: bold;
-    margin-bottom: 0;
+    margin: 0 auto;
+}
+
+.content {
+    overflow: hidden;
+    margin: 20px 0;
 }
 
 .description {
     margin-top: 10px;
     font-size: 1em;
+
+    margin: 0;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 </style>
