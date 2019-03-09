@@ -7,7 +7,12 @@
             :key="post.permalink"
             target="_blank"
         >
-            <div class="image" :style="{ backgroundImage: `url(https://blog.lucas-hild.de${post.image})` }"></div>
+            <div class="image" :style="{ backgroundImage: `url(https://blog.lucas-hild.de${post.image})` }">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                </svg>
+            </div>
             <div class="content">
                 <p class="title">{{ post.title }}</p>
                 <p class="description">{{ post.description }}</p>
@@ -48,6 +53,37 @@ export default {
 .image {
     background-size: cover;
     background-position: center;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.image:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+.image:hover:after {
+    opacity: 1;
+}
+
+.image svg {
+    fill: white;
+    width: 40px;
+    z-index: 5;
+    transform: translatex(-150px);
+    transition: all 0.3s;
+}
+
+.image:hover svg {
+    transform: translatex(0px);
 }
 
 .title {
