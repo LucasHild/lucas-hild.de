@@ -1,0 +1,21 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  image: node:latest
+  script:
+    - npm install --progress=false
+    - npm run build
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - dist
+
+deploy:
+  stage: deploy
+  when: manual
+  script:
+    - apt-get update -qq && apt-get install -y -qq lftp
+    - ls
