@@ -7,7 +7,7 @@
 body {
     background: var(--background-color);
     font-family: 'Mukta Mahee', sans-serif;
-    color: #b5bbce;
+    color: var(--text-color);
     font-family: sans-serif;
 
     line-height: 1.5em;

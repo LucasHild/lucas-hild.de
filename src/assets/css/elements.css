@@ -1,7 +1,16 @@
+section {
+    margin-bottom: 75px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
 h1 {
     font-size: 4em;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
 }

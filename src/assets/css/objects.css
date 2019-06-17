@@ -1,0 +1,16 @@
+.button-wrapper {
+    margin: 25px 0;
+    display: grid;
+    place-content: center;
+}
+
+.button {
+    color: white;
+    border: 3px solid var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.button:hover {
+    background: var(--secondary-color);
+}
