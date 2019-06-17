@@ -1,7 +1,9 @@
 <template>
     <div id="app">
         <NavBar/>
-        <router-view/>
+        <main>
+            <router-view/>
+        </main>
     </div>
 </template>
 
@@ -16,4 +18,9 @@ export default {
 </script>
 
 <style>
+main {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 </style>
