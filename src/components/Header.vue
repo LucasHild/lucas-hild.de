@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <p class="secondary">Hi, my name is</p>
+        <h3 class="secondary mono">Hi, my name is</h3>
         <h1>Lucas Hild</h1>
         <p
             class="introduction"
@@ -20,6 +20,6 @@ export default {
 }
 
 .introduction {
-    width: 50%;
+    width: 75%;
 }
 </style>

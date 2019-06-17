@@ -1,3 +1,7 @@
 .secondary {
     color: #64b6ff
 }
+
+.mono {
+    font-family: 'Ubuntu Mono', monospace;
+}
