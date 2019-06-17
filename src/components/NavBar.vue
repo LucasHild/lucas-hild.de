@@ -43,6 +43,7 @@ export default {
 nav {
     display: grid;
     grid-template-columns: 1fr auto;
+    padding: 0 50px;
 }
 
 ul {

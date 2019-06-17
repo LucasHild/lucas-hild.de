@@ -1,10 +1,12 @@
 <template>
     <header class="header">
-        <h3 class="secondary mono">Hi, my name is</h3>
-        <h1>Lucas Hild</h1>
-        <p
-            class="introduction"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, facere? Expedita dolorem labore at debitis.</p>
+        <div class="wrapper">
+            <h3 class="secondary mono">Hi, my name is</h3>
+            <h1>Lucas Hild</h1>
+            <p
+                class="introduction"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, facere? Expedita dolorem labore at debitis.</p>
+        </div>
     </header>
 </template>
 
