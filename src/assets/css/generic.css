@@ -5,15 +5,7 @@
 }
 
 body {
-    background: #0c1f3a;
+    background: var(--background-color);
     color: #b5bbce;
     font-family: 'Ubuntu Mono', monospace;
-}
-
-h1 {
-    color: white;
-}
-
-.secondary {
-    color: #64b6ff
 }
