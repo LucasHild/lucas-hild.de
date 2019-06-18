@@ -3,8 +3,10 @@
         <h3 class="secondary mono">Lucas Hild</h3>
         <ul>
             <li v-for="(link, index) in links" class="mono" :key="link.tag">
-                <span class="index secondary">0{{ index + 1 }}.</span>
-                <span>{{ link.name }}</span>
+                <a :href="`#${link.tag}`">
+                    <span class="index secondary">0{{ index + 1 }}.</span>
+                    <span>{{ link.name }}</span>
+                </a>
             </li>
         </ul>
     </nav>
@@ -55,7 +57,15 @@ li {
     margin: 0 10px;
 }
 
+li:hover {
+    text-decoration: underline;
+}
+
+li a {
+    color: unset;
+}
+
 li .index {
-    margin-right: 5px;
+    padding-right: 5px;
 }
 </style>
