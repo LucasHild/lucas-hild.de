@@ -1,8 +1,25 @@
 <template>
     <div id="app">
+        <NavBar />
         <router-view />
     </div>
 </template>
 
-<style>
+<script>
+import NavBar from '@/components/NavBar'
+
+export default {
+    name: 'app',
+
+    components: { NavBar },
+
+    created() {
+        window.onload = () => {
+            document.querySelector('body').classList.add('vsc-initialized')
+        }
+    }
+}
+</script>
+
+<style scoped>
 </style>
