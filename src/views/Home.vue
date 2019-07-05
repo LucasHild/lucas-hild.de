@@ -1,9 +1,15 @@
 <template>
-    <div class="home"></div>
+    <div class="home">
+        <HeaderComponent />
+    </div>
 </template>
 
 <script>
+import HeaderComponent from '@/components/HeaderComponent'
+
 export default {
-    name: 'home'
+    name: 'home',
+
+    components: { HeaderComponent }
 }
 </script>
