@@ -1,21 +1,15 @@
 # lucas-hild.de
 
-## Project setup
-```
-npm install
-```
+![](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+My personal website and portfolio
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Made with
+
+- [Vue.js](https://vuejs.com) - JavaScript Framework
+
+## Meta
+
+Lucas Hild - [https://lucas-hild.de](https://lucas-hild.de)  
+This project is licensed under the MIT License - see the LICENSE file for details
