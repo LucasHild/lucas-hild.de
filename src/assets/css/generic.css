@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta+Mahee|Fjalla+One");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mukta Mahee', sans-serif;
+}
+
+main,
+body {
+    margin: 0;
+    padding: 0;
+}
