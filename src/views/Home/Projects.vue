@@ -1,5 +1,5 @@
 <template>
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <h2>Projekte</h2>
             <FeaturedProject v-for="(project, index) in projects" :project="project" :swapImageAndContent="index % 2 != 0" :key="project.title"  />

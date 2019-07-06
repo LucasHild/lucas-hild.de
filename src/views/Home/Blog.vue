@@ -1,5 +1,5 @@
 <template>
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="container">
             <h2>Blog</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi quisquam rem qui eius earum quae error, dignissimos soluta alias, praesentium temporibus saepe dolorem voluptatem repellat possimus numquam, provident mollitia?</p>

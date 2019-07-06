@@ -43,7 +43,10 @@ export default {
         return {
             links: [
                 { title: 'Über mich', hash: 'about' },
-                { title: 'Blog', hash: 'blog' }
+                { title: 'Blog', hash: 'blog' },
+                { title: 'Projekte', hash: 'projects' },
+                { title: 'Kontakte', hash: 'contact' }
+
             ],
             windowScrollY: 0
         }
