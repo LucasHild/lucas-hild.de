@@ -20,3 +20,17 @@ a {
     text-decoration: none;
     color: black;
 }
+
+input, textarea {
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+textarea {
+    resize: vertical;
+    height: 200px;
+    font-family: 'Mukta Mahee', sans-serif;
+}
