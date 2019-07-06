@@ -1,5 +1,5 @@
 .dark-section {
-    background-color: #eeeeee;
+    background-color: var(--dark-background-color);
 }
 
 .button-wrapper {
