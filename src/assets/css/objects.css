@@ -12,7 +12,8 @@
     background-color: var(--primary-color);
     color: white;
     padding: 20px 40px;
-
+    cursor: pointer;
+    line-height: initial !important;
 }
 
 .button:hover {
@@ -30,7 +31,7 @@
     transform: scale(1.02);
 }
 
-section .container {
+.container {
     width: 70%;
     margin: 0 auto;
     padding: 125px 0;
@@ -41,7 +42,7 @@ section .container {
 }
 
 .container a:hover {
-    color: var(--primary-color);
+    color: var(--pimary-color-dark);
 }
 
 .container h2 {
@@ -53,5 +54,9 @@ section .container {
 
 .container h3 {
     font-weight: 400;
+    text-align: center;
+}
+
+.section-introduction {
     text-align: center;
 }
