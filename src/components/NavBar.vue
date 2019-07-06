@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar">
+    <nav class="navbar" :class="{ 'has-background': hasBackground }">
         <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0h24v24H0z" fill="none" />
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
@@ -44,7 +44,24 @@ export default {
             links: [
                 { title: 'Über mich', hash: 'about' },
                 { title: 'Blog', hash: 'blog' }
-            ]
+            ],
+            windowScrollY: 0
+        }
+    },
+
+    created() {
+        addEventListener('scroll', this.onScroll);
+    },
+
+    methods: {
+        onScroll() {
+            this.windowScrollY = window.scrollY
+        }
+    },
+
+    computed: {
+        hasBackground() {
+            return this.windowScrollY > 69
         }
     }
 }
@@ -59,11 +76,11 @@ nav {
     width: 100%;
 }
 
-nav.nav-blue {
+nav.has-background {
     background-color: var(--primary-color);
 }
 
-nav.nav-blue .links a:hover {
+nav.has-background .links a:hover {
     color: white;
     border-bottom: 1px solid white;
 }
