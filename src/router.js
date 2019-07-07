@@ -25,5 +25,11 @@ export default new Router({
             name: 'privacyPolicy',
             component: PrivacyPolicy
         }
-    ]
+    ],
+    scrollBehavior(to) {
+        let isOnSamePage = to.fullPath.startsWith('/#')
+        if (!isOnSamePage) {
+            return {x: 0, y: 0}
+        }
+    }
 })
