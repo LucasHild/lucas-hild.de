@@ -13,7 +13,7 @@
                     <p>Mit folgenden Programmiersprachen und Technologien habe ich in letzter Zeit gearbeitet:</p>
                     <div
                         class="technologies-grid"
-                        :style="{ '--wrench-image': `url(${require('@/assets/img/wrench.svg')})` }"
+                        :style="{ '--wrench-svg': wrenchSVG, '--wrench-svg-blue': wrenchSVGBlue }"
                     >
                         <ul>
                             <li>Python</li>
@@ -36,7 +36,19 @@
 
 <script>
 export default {
-    name: 'about'
+    name: 'about',
+
+    data() {
+        return {
+            wrenchSVG: `url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M22.7,19L13.6,9.9C14.5,7.6 14,4.9 12.1,3C10.1,1 7.1,0.6 4.7,1.7L9,6L6,9L1.6,4.7C0.4,7.1 0.9,10.1 2.9,12.1C4.8,14 7.5,14.5 9.8,13.6L18.9,22.7C19.3,23.1 19.9,23.1 20.3,22.7L22.6,20.4C23.1,20 23.1,19.3 22.7,19Z" /></svg>'`
+        }
+    },
+
+    computed: {
+        wrenchSVGBlue() {
+            return this.wrenchSVG.replace('black', getComputedStyle(document.documentElement).getPropertyValue('--primary-color'))
+        }
+    }
 }
 </script>
 
@@ -44,6 +56,7 @@ export default {
 .grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
 }
 
 .grid .image-wrapper {
@@ -59,6 +72,7 @@ export default {
     height: 250px;
     background-position: center;
     background-size: cover;
+    border: 5px solid var(--primary-color);
 }
 
 .technologies-grid {
@@ -75,7 +89,7 @@ export default {
     display: inline-block;
     height: 1em;
     width: 35px;
-    background-image: var(--wrench-image);
+    background-image: var(--wrench-svg);
     background-size: 1em;
     background-repeat: no-repeat;
     background-position: center;
@@ -83,6 +97,7 @@ export default {
 }
 
 .technologies-grid ul li:hover::before {
+    background-image: var(--wrench-svg-blue);
     transition: transform 0.3s ease-in-out;
     transform: rotateZ(360deg);
 }
