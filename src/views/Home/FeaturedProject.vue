@@ -50,7 +50,6 @@ export default {
     margin-bottom: 25px;
 }
 
-
 .image {
     width: 100%;
     grid-area: 1 / 1 / span 1 / span 6;
@@ -98,5 +97,24 @@ ul.technologies li {
 
 .icons svg {
     margin: 0 7px;
+}
+
+@media (max-width: 750px) {
+    .featured-project {
+        display: block;
+    }
+
+    .featured-project h3 {
+        text-align: left !important;
+    }
+
+    .featured-project .text {
+        background: none;
+        padding: 0;
+    }
+
+    .featured-project .technologies, .featured-project .icons {
+        text-align: right !important;
+    }
 }
 </style>

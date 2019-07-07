@@ -34,3 +34,11 @@ textarea {
     height: 200px;
     font-family: 'Mukta Mahee', sans-serif;
 }
+
+@media (max-width: 750px) {
+    p,
+    a,
+    li {
+        font-size: 1em;
+    }
+}

@@ -111,4 +111,11 @@ export default {
 .content {
     padding: 0 10px;
 }
+
+@media (max-width: 750px) {
+    .posts {
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+}
 </style>

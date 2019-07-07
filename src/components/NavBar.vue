@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar" :class="{ 'has-background': hasBackground }">
-        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <svg @click="openMobileNav" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0h24v24H0z" fill="none" />
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
         </svg>
@@ -15,9 +15,9 @@
             <router-link :to="{ name: 'home' }">Startseite</router-link>
         </div>
 
-        <div class="mobile-nav">
+        <div v-if="isMobileNavVisible" :class="{ isMobileNavVisible }" class="mobile-nav">
             <svg
-                id="close-mobile-nav"
+                @click="closeMobileNav"
                 fill="#FFFFFF"
                 height="24"
                 viewBox="0 0 24 24"
@@ -32,8 +32,11 @@
 
             <h1>Lucas Hild</h1>
 
-            <div class="links">
-                <a v-for="link in links" :href="`#${link.hash}`" :key="link.hash">{{ link.title }}</a>
+            <div v-if="isHomeRoute">
+                <a @click="closeMobileNav" v-for="link in links" :href="`#${link.hash}`" :key="link.hash">{{ link.title }}</a>
+            </div>
+            <div v-else>
+                <router-link @click.native="closeMobileNav" :to="{ name: 'home' }">Startseite</router-link>
             </div>
         </div>
     </nav>
@@ -52,7 +55,8 @@ export default {
                 { title: 'Kontakte', hash: 'contact' }
 
             ],
-            windowScrollY: 0
+            windowScrollY: 0,
+            isMobileNavVisible: false
         }
     },
 
@@ -63,6 +67,14 @@ export default {
     methods: {
         onScroll() {
             this.windowScrollY = window.scrollY
+        },
+
+        openMobileNav() {
+            this.isMobileNavVisible = true
+        },
+
+        closeMobileNav() {
+            this.isMobileNavVisible = false
         }
     },
 
@@ -135,7 +147,6 @@ nav .links a:hover {
 }
 
 nav .mobile-nav {
-    display: none;
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -150,5 +161,26 @@ nav .mobile-nav a {
     line-height: 50px;
     padding-left: 30px;
     text-transform: uppercase;
+}
+
+@media (max-width: 750px) {
+    nav {
+        padding: 0;
+    }
+    
+    nav svg {
+        display: block;
+    }
+
+    nav h1 {
+        text-align: center;
+        display: block;
+        margin: 0;
+        line-height: 75px;
+    }
+    
+    nav .links {
+        display: none;
+    }
 }
 </style>

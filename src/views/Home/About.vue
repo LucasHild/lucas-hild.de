@@ -107,4 +107,12 @@ export default {
     transition: transform 0.3s ease-in-out;
     transform: rotateZ(360deg);
 }
+
+@media (max-width: 750px) {
+    .grid {
+        display: block;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 10px;
+    }
+}
 </style>
