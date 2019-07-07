@@ -4,11 +4,10 @@
         <div class="content-wrapper">
             <div class="content">
                 <h3>{{ project.title }}</h3>
-                <p class="text">{{ project.text }}</p>
+                <p class="text" v-html="project.text"></p>
                 <ul class="technologies">
                     <li
                         v-for="technology in project.technologies"
-                        class="secondary mono"
                         :key="technology"
                     >{{ technology }}</li>
                 </ul>

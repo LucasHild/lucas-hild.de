@@ -2,7 +2,9 @@
     <section class="blog" id="blog">
         <div class="container">
             <h2>Blog</h2>
-            <p class="section-introduction">Auf meinem Blog schreibe ich Artikel über Softwareentwicklung, Technologie und weitere Themen, die mich interessieren. Schaut gerne einmal vorbei.</p>
+            <p
+                class="section-introduction"
+            >Auf meinem Blog schreibe ich Artikel über Softwareentwicklung, Technologie und weitere Themen, die mich interessieren. Schau gerne einmal vorbei.</p>
 
             <div class="posts">
                 <a
@@ -19,7 +21,7 @@
                         </svg>
                     </div>
                     <div class="content">
-                        <p class="title secondary mono">{{ post.title }}</p>
+                        <p class="title">{{ post.title }}</p>
                         <p class="description">{{ post.description }}</p>
                     </div>
                 </a>
