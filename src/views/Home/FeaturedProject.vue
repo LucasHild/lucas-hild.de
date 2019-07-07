@@ -1,10 +1,10 @@
 <template>
     <div class="featured-project" :class="{ 'swap-image-and-content': swapImageAndContent }">
-        <img :src="project.image" :key="project.title" />
+        <img class="image" :src="project.image" />
         <div class="content-wrapper">
             <div class="content">
                 <h3>{{ project.title }}</h3>
-                <p>{{ project.text }}</p>
+                <p class="text">{{ project.text }}</p>
                 <ul class="technologies">
                     <li
                         v-for="technology in project.technologies"
@@ -46,45 +46,55 @@ export default {
 <style scoped>
 .featured-project {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
     margin-bottom: 25px;
 }
 
-.featured-project:hover {
-    background: var(--dark-background-color);
-}
 
-.featured-project.swap-image-and-content {
-    grid-template-columns: 2fr 1fr;
-}
-
-.featured-project.swap-image-and-content img {
-    order: 1;
-}
-
-img {
+.image {
     width: 100%;
+    grid-area: 1 / 1 / span 1 / span 6;
 }
 
 .content-wrapper {
     display: flex;
     place-items: center;
     padding: 10px;
+    grid-area: 1 / 6 / span 1 / span 7;
+    text-align: right;
+}
+
+.featured-project.swap-image-and-content .image {
+    grid-area: 1 / 7 / span 1 / span 6;
+}
+
+.featured-project.swap-image-and-content .content-wrapper {
+    grid-area: 1 / 1 / span 1 / span 7;
+}
+
+h3 {
+    text-align: right !important;
+}
+
+.text {
+    background: var(--dark-background-color);
+    text-align: left;
+    padding: 15px;
+}
+
+.featured-project.swap-image-and-content * {
+    text-align: left !important;
 }
 
 ul.technologies {
     list-style-type: none;
     padding-left: 0;
-    text-align: center;
 }
 
 ul.technologies li {
     display: inline;
     margin: 0 7px;
-}
-
-.icons {
-    text-align: center;
 }
 
 .icons svg {
