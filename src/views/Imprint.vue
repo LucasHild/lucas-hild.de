@@ -1,6 +1,8 @@
 <template>
     <div class="imprint">
         <div class="container">
+            <h2>Impressum</h2>
+
             <p>
                 <strong>Angaben gemäß § 5 TMG</strong>
                 <br />Lucas Hild
