@@ -2,6 +2,16 @@ stages:
   - build
   - deploy
 
+before_script:
+  - apt-get update -qq
+  - apt-get install -qq git
+  # Setup SSH deploy keys
+  - 'which ssh-agent || ( apt-get install -qq openssh-client )'
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
 build:
   stage: build
   image: node:latest
@@ -17,5 +27,5 @@ deploy:
   stage: deploy
   when: manual
   script:
-    - apt-get update -qq && apt-get install -y -qq lftp
-    - ls
+    - ssh $SSH_USERNAME_HOST "rm -rf ${SSH_DOCUMENT_ROOT}/html/*"
+    - scp -r dist/* $SSH_USERNAME_HOST:${SSH_DOCUMENT_ROOT}/html
