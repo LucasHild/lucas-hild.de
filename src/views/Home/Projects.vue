@@ -20,14 +20,14 @@ export default {
             projects: [
                 {
                     title: 'schoolsen',
-                    text: 'In 2018 three friends and me founded a German startup called schoolsen. We provide a platform to schools that helps students to gain information about their school comfortably using our app.',
+                    text: 'Im Jahr 2018 haben drei Freunde und ich das Start Up schoolsen gegründet. Wir bieten Schulen eine Plattform an, welche Schüler*innen in ihrem Schulalltag hilft. Diese können Informationen bequem über eine App abrufen.',
                     image: require('@/assets/img/schoolsen.webp'),
                     technologies: ['Python', 'Flask', 'Docker', 'Vue.js'],
                     externalURL: 'https://schoolsen.de'
                 },
                 {
                     title: 'ReVue',
-                    text: 'A simple Reddit clone built with Vue.js and Flask. The application supports "Subvues", Posts, Voting, User-Managment and more.',
+                    text: 'Ein Reddit Clone, welchen ich mit Vue.js und Flask gebaut habe. Die Applikation beinhaltet "Subvues", Posts, Votings, User-Managment und mehr.',
                     image: require('@/assets/img/revue.webp'),
                     technologies: ['Vue.js', 'Vuex', 'Python', 'MongoDB'],
                     githubURL: 'https://github.com/Lanseuo/revue'
