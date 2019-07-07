@@ -15,7 +15,10 @@
                         In meiner Freizeit klettere ich und spiele Geige. Außerdem fotografiere und filme ich gerne.
                     </p>
                     <p>These are some technologies I've been working with recently:</p>
-                    <div class="technologies-grid">
+                    <div
+                        class="technologies-grid"
+                        :style="{ '--wrench-image': `url(${require('@/assets/img/wrench.svg')})` }"
+                    >
                         <ul>
                             <li>Python</li>
                             <li>Golang</li>
@@ -69,17 +72,23 @@ export default {
 
 .technologies-grid ul {
     list-style-type: none;
+    /* list-style-image: var(--wrench-image); */
 }
 
 .technologies-grid ul li::before {
-    content: "\2610";
-    color: var(--secondary-color);
+    content: "";
     display: inline-block;
-    margin-left: -37px;
-    margin-right: 7px;
+    height: 1em;
+    width: 35px;
+    background-image: var(--wrench-image);
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -35px;
 }
 
 .technologies-grid ul li:hover::before {
-    content: "\2611";
+    transition: transform 0.3s ease-in-out;
+    transform: rotateZ(360deg);
 }
 </style>
