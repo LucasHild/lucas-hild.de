@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home/Home.vue'
+import Imprint from '@/views/Imprint.vue'
 
 Vue.use(Router)
 
@@ -12,6 +13,11 @@ export default new Router({
             path: '/',
             name: 'home',
             component: Home
+        },
+        {
+            path: '/impressum',
+            name: 'imprint',
+            component: Imprint
         }
     ]
 })

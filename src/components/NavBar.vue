@@ -7,8 +7,12 @@
 
         <h1>Lucas Hild</h1>
 
-        <div class="links">
+        <div class="links" v-if="isHomeRoute">
             <a v-for="link in links" :href="`#${link.hash}`" :key="link.hash">{{ link.title }}</a>
+        </div>
+
+        <div class="links" v-else>
+            <router-link :to="{ name: 'home' }">Startseite</router-link>
         </div>
 
         <div class="mobile-nav">
@@ -64,7 +68,11 @@ export default {
 
     computed: {
         hasBackground() {
-            return this.windowScrollY > 69
+            return this.windowScrollY > 69 || !this.isHomeRoute
+        },
+
+        isHomeRoute() {
+            return this.$route.name == 'home'
         }
     }
 }

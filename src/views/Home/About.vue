@@ -8,7 +8,9 @@
                 </div>
                 <div class="text-wrapper">
                     <p>
-                        Hey, mein Name ist Lucas, ich besuche aktuell ein Gymnasium und ich programmiere seit vielen Jahren. In meiner Freizeit lerne ich gerne neue Programmiersprachen und Technologien. Zudem ich interessiere ich mich für Entrepreneurship und Marketing. Mit ein paar Freunden habe ich im Jahr ein das Start Up <a href="#projects">schoolsen</a> gegründet. Wenn Du mehr wissen möchtest, kannst Du mir im gerne eine <a href="#contact">Nachricht zukommen</a> lassen.</p>
+                        Hey, mein Name ist Lucas, ich besuche aktuell ein Gymnasium und ich programmiere seit vielen Jahren. In meiner Freizeit lerne ich gerne neue Programmiersprachen und Technologien. Zudem ich interessiere ich mich für Entrepreneurship und Marketing. Mit ein paar Freunden habe ich im Jahr ein das Start Up
+                        <a href="#projects">schoolsen</a> gegründet. Wenn Du mehr wissen möchtest, kannst Du mir im gerne eine
+                        <a href="#contact">Nachricht zukommen</a> lassen.
                     </p>
                     <p>Mit folgenden Programmiersprachen und Technologien habe ich in letzter Zeit gearbeitet:</p>
                     <div
