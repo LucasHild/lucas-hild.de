@@ -2,7 +2,7 @@
     <section class="blog" id="blog">
         <div class="container">
             <h2>Blog</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi quisquam rem qui eius earum quae error, dignissimos soluta alias, praesentium temporibus saepe dolorem voluptatem repellat possimus numquam, provident mollitia?</p>
+            <p class="section-introduction">Auf meinem Blog schreibe ich Artikel über Softwareentwicklung, Technologie und weitere Themen, die mich interessieren. Schaut gerne einmal vorbei.</p>
 
             <div class="posts">
                 <a
@@ -61,6 +61,7 @@ export default {
 .post {
     margin: 10px 0;
     background: white;
+    color: black !important /* prevent hover color */;
 }
 
 .post .image {
