@@ -7,14 +7,10 @@
                     <div class="image" :style="{ backgroundImage: `url(${require('@/assets/img/stones.webp')})` }"></div>
                 </div>
                 <div class="text-wrapper">
-                    <p class="section-introduction">
-                        Vor einigen Jahren habe ich zu meinem Geburtstag einen Raspberry Pi bekommen.
-                        Dies war der Zeitpunkt, ab dem ich angefangen habe, mich für die Entwicklung von Software zu interessieren.
-                        Über die Zeit hat sich mein Interesse stark ausgebreitet.
-                        Heutzutage entwickle ich gerne Backend-Applications, ich baue und designe Webseiten und interessiere mich für weitere Programmiersprachen.
-                        In meiner Freizeit klettere ich und spiele Geige. Außerdem fotografiere und filme ich gerne.
+                    <p>
+                        Hey, mein Name ist Lucas, ich besuche aktuell ein Gymnasium und ich programmiere seit vielen Jahren. In meiner Freizeit lerne ich gerne neue Programmiersprachen und Technologien. Zudem ich interessiere ich mich für Entrepreneurship und Marketing. Mit ein paar Freunden habe ich im Jahr ein das Start Up <a href="#projects">schoolsen</a> gegründet. Wenn Du mehr wissen möchtest, kannst Du mir im gerne eine <a href="#contact">Nachricht zukommen</a> lassen.</p>
                     </p>
-                    <p>These are some technologies I've been working with recently:</p>
+                    <p>Mit folgenden Programmiersprachen und Technologien habe ich in letzter Zeit gearbeitet:</p>
                     <div
                         class="technologies-grid"
                         :style="{ '--wrench-image': `url(${require('@/assets/img/wrench.svg')})` }"
@@ -72,7 +68,6 @@ export default {
 
 .technologies-grid ul {
     list-style-type: none;
-    /* list-style-image: var(--wrench-image); */
 }
 
 .technologies-grid ul li::before {

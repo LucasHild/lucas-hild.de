@@ -3,7 +3,7 @@
         <div class="content">
             <p>Hallo, mein Name ist</p>
             <h1>Lucas Hild</h1>
-            <p>Ich baue Webseiten und programmiere.</p>
+            <p>Developer & Entrepreneur</p>
         </div>
 
         <div class="arrow">

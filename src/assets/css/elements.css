@@ -17,8 +17,8 @@ h6 {
 }
 
 a {
+    color: var(--primary-color);
     text-decoration: none;
-    color: black;
 }
 
 input, textarea {
