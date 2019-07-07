@@ -110,42 +110,12 @@
                 unserer Website möglicherweise nicht funktionieren, wenn Sie die Verwendung von Cookies deaktiviert haben.
             </p>
 
-            <h3>HTML5 LocalStorage</h3>
-            <p>
-                Die Internetseiten verwenden teilweise den so genannten HTML LocalStorage. Dieser richtet auf Ihrem Rechner keinen Schaden
-                an und enthält keine Viren. Der LocalStorage dienen dazu, unser Angebot nutzerfreundlicher, effektiver
-                und sicherer zu machen.
-            </p>
-
             <h3>SSL-Verschlüsselung</h3>
             <p>
                 Um die Sicherheit Ihrer Daten bei der Übertragung zu schützen, verwenden wir dem aktuellen Stand der Technik
                 entsprechende Verschlüsselungsverfahren (z. B. SSL) über HTTPS.
             </p>
-            <h3>Newsletter</h3>
-            <p>
-                Auf Grundlage Ihrer ausdrücklich erteilten Einwilligung, übersenden wir Ihnen regelmäßig unseren Newsletter
-                bzw. vergleichbare Informationen per E-Mail an Ihre angegebene E-Mail-Adresse.
-            </p>
-            <p>
-                Für den Empfang des Newsletters ist die Angabe Ihrer E-Mail-Adresse ausreichend. Bei der Anmeldung zum Bezug
-                unseres Newsletters werden die von Ihnen angegebenen Daten ausschließlich für diesen Zweck verwendet.
-                Abonnenten können auch über Umstände per E-Mail informiert werden, die für den Dienst oder die Registrierung
-                relevant sind (Beispielsweise Änderungen des Newsletterangebots oder technische Gegebenheiten).
-            </p>
-            <p>
-                Für eine wirksame Registrierung benötigen wir eine valide E-Mail-Adresse. Um zu überprüfen, dass eine Anmeldung
-                tatsächlich durch den Inhaber einer E-Mail-Adresse erfolgt, setzen wir das „Double-opt-in“-Verfahren
-                ein. Hierzu protokollieren wir die Bestellung des Newsletters, den Versand einer Bestätigungsmail und
-                den Eingang der hiermit angeforderten Antwort. Weitere Daten werden nicht erhoben. Die Daten werden ausschließlich
-                für den Newsletterversand verwendet und nicht an Dritte weitergegeben.
-            </p>
-            <p>
-                Die Einwilligung zur Speicherung Ihrer persönlichen Daten und ihrer Nutzung für den Newsletterversand können
-                Sie jederzeit widerrufen. In jedem Newsletter findet sich dazu ein entsprechender Link. Außerdem können
-                Sie sich jederzeit auch direkt auf dieser Webseite abmelden oder uns Ihren entsprechenden Wunsch über
-                die am Ende dieser Datenschutzhinweise angegebene Kontaktmöglichkeit mitteilen.
-            </p>
+
             <h3>Kontaktformular</h3>
             <p>
                 Treten Sie bzgl. Fragen jeglicher Art per E-Mail oder Kontaktformular mit uns in Kontakt, erteilen Sie uns
@@ -155,6 +125,7 @@
                 der Anfrage sowie für mögliche Anschlussfragen gespeichert. Nach Erledigung der von Ihnen gestellten
                 Anfrage werden personenbezogene Daten automatisch gelöscht.
             </p>
+
             <h3>Verwendung von Google Analytics</h3>
             <p>
                 Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (folgend: Google). Google
@@ -201,26 +172,6 @@
                 Erfassung durch Google Analytics für diese Website und für diesen Browser zukünftig verhindert, so lange
                 das Cookie in Ihrem Browser installiert bleibt.
             </p>
-            <h3>Verwendung von Matomo</h3>
-            <p>
-                Diese Website benutzt Matomo (ehemals Piwik), eine Open-Source-Software zur statistischen Auswertung von
-                Besucherzugriffen. Matomo verwendet sog. Cookies, also Textdateien, die auf Ihrem Computer gespeichert
-                werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen.
-            </p>
-            <p>
-                Die durch das Cookie erzeugten Informationen über Ihre Nutzung des Internetangebotes werden auf einem Server
-                in Deutschland gespeichert.
-            </p>
-            <p>
-                Die IP-Adresse wird unmittelbar nach der Verarbeitung und vor deren Speicherung anonymisiert. Sie haben die
-                Möglichkeit, die Installation der Cookies durch Änderung der Einstellung Ihrer Browser-Software zu verhindern.
-                Wir weisen Sie darauf hin, dass bei entsprechender Einstellung eventuell nicht mehr alle Funktionen dieser
-                Website zur Verfügung stehen.
-            </p>
-            <p>
-                Sie können sich entscheiden, ob in Ihrem Browser ein eindeutiger Webanalyse-Cookie abgelegt werden darf,
-                um dem Betreiber der Webseite die Erfassung und Analyse verschiedener statistischer Daten zu ermöglichen.
-            </p>
 
             <h3>Verwendung von Scriptbibliotheken (Google Webfonts)</h3>
             <p>
@@ -246,31 +197,6 @@
                     target="_blank"
                     rel="noopener"
                 >https://www.google.com/policies/privacy/</a>
-            </p>
-
-            <h3>Eingebettete YouTube-Videos</h3>
-            <p>
-                Auf einigen unserer Webseiten betten wir Youtube-Videos ein. Betreiber der entsprechenden Plugins ist die
-                YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie eine Seite mit dem YouTube-Plugin besuchen,
-                wird eine Verbindung zu Servern von Youtube hergestellt. Dabei wird Youtube mitgeteilt, welche Seiten
-                Sie besuchen. Wenn Sie in Ihrem Youtube-Account eingeloggt sind, kann Youtube Ihr Surfverhalten Ihnen
-                persönlich zuzuordnen. Dies verhindern Sie, indem Sie sich vorher aus Ihrem Youtube-Account ausloggen.
-            </p>
-            <p>Wird ein Youtube-Video gestartet, setzt der Anbieter Cookies ein, die Hinweise über das Nutzerverhalten sammeln.</p>
-            <p>
-                Wer das Speichern von Cookies für das Google-Ad-Programm deaktiviert hat, wird auch beim Anschauen von Youtube-Videos
-                mit keinen solchen Cookies rechnen müssen. Youtube legt aber auch in anderen Cookies nicht-personenbezogene
-                Nutzungsinformationen ab. Möchten Sie dies verhindern, so müssen Sie das Speichern von Cookies im Browser
-                blockieren.
-            </p>
-            <p>
-                Weitere Informationen zum Datenschutz bei „Youtube“ finden Sie in der Datenschutzerklärung des Anbieters
-                unter:
-                <a
-                    href="https://www.google.de/intl/de/policies/privacy/"
-                    target="_blank"
-                    rel="noopener"
-                >https://www.google.de/intl/de/policies/privacy/</a>
             </p>
 
             <h3>Änderung unserer Datenschutzbestimmungen</h3>
