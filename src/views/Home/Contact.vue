@@ -40,36 +40,46 @@ export default {
     },
 
     methods: {
-        submit() {
-            let formData = new FormData();
-            formData.append('name', this.name)
-            formData.append('mail', this.mail)
-            formData.append('message', this.message)
+        async submit() {
+            this.loading = true
 
-            fetch('https://lanseuo.herokuapp.com/mail-contact', {
+            let requestData = {
+                name: this.name,
+                mail: this.mail,
+                message: this.message,
+                recaptchaToken: await this.recaptchaToken()
+            }
+
+            let response = await fetch('https://a7cug9jwkl.execute-api.us-east-1.amazonaws.com/dev/', {
                 method: 'POST',
-                body: formData
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(requestData)
             })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.error) {
-                        this.alertBox.success = false
-                        this.alertBox.text = data.error ? data.error : 'Es ist ein Fehler aufgetreten!'
-                    } else if (data.success == 'sent') {
-                        this.alertBox.success = true
-                        this.alertBox.text = 'Die Nachricht wurde gesendet!'
 
-                        this.name = ''
-                        this.mail = ''
-                        this.message = ''
-                    }
+            let responseData = await response.json()
+            this.alertBox.text = responseData.message
+            let success = response.status == 200
+            this.alertBox.success = success
 
-                    this.alertBox.visible = true
+            if (success) {
+                this.name = ''
+                this.mail = ''
+                this.message = ''
+            }
 
+            this.alertBox.visible = true
+            this.loading = false
+        },
+
+        recaptchaToken() {
+            const recaptchaSiteKey = '6Ld1UNQUAAAAAF9dlqlyxIGRKqFGsgvtAXeIOIXl'
+
+            return new Promise(resolve => {
+                grecaptcha.ready(async () => {  // eslint-disable-line
+                    const token = await grecaptcha.execute(recaptchaSiteKey) // eslint-disable-line
+                    resolve(token)
                 })
-                .catch(e => {
-                    throw e;
-                })
+            })
         }
     }
 }
@@ -78,13 +88,10 @@ export default {
 <style scoped>
 .alert-box {
     padding: 0 10px;
+    border: 3px solid rgb(218, 13, 61);
 }
 
 .alert-box.success {
     border: 3px solid rgb(66, 181, 131);
-}
-
-.alert-box.failure {
-    border: 3px solid rgb(218, 13, 61);
 }
 </style>

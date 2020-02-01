@@ -1,6 +1,13 @@
 <template>
     <nav class="navbar" :class="{ 'has-background': hasBackground }">
-        <svg @click="openMobileNav" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <svg
+            @click="openMobileNav"
+            fill="#FFFFFF"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+        >
             <path d="M0 0h24v24H0z" fill="none" />
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
         </svg>
@@ -33,7 +40,12 @@
             <h1>Lucas Hild</h1>
 
             <div v-if="isHomeRoute">
-                <a @click="closeMobileNav" v-for="link in links" :href="`#${link.hash}`" :key="link.hash">{{ link.title }}</a>
+                <a
+                    @click="closeMobileNav"
+                    v-for="link in links"
+                    :href="`#${link.hash}`"
+                    :key="link.hash"
+                >{{ link.title }}</a>
             </div>
             <div v-else>
                 <router-link @click.native="closeMobileNav" :to="{ name: 'home' }">Startseite</router-link>
@@ -52,7 +64,7 @@ export default {
                 { title: 'Über mich', hash: 'about' },
                 { title: 'Blog', hash: 'blog' },
                 { title: 'Projekte', hash: 'projects' },
-                { title: 'Kontakte', hash: 'contact' }
+                { title: 'Kontakt', hash: 'contact' }
 
             ],
             windowScrollY: 0,
@@ -167,7 +179,7 @@ nav .mobile-nav a {
     nav {
         padding: 0;
     }
-    
+
     nav svg {
         display: block;
     }
@@ -178,7 +190,7 @@ nav .mobile-nav a {
         margin: 0;
         line-height: 75px;
     }
-    
+
     nav .links {
         display: none;
     }
