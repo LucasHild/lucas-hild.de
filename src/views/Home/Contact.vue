@@ -10,6 +10,14 @@
                 <input type="text" v-model="name" placeholder="Name" />
                 <input type="email" v-model="mail" placeholder="E-Mail-Adresse" />
                 <textarea v-model="message" placeholder="Nachricht" />
+                <small>
+                    Diese Seite wird durch reCAPTCHA geschützt und die Google
+                    <a
+                        href="https://policies.google.com/privacy"
+                        target="_blank"
+                    >Datenschutzerklärung</a> sowie deren
+                    <a href="https://policies.google.com/terms" target="_blank">Geschäftsbedingungen</a> sind gültig.
+                </small>
                 <div class="button-wrapper">
                     <p class="button" @click="submit">
                         <span v-if="!loading">Absenden</span>
