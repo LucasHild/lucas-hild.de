@@ -4,7 +4,6 @@
 
 My personal website and portfolio
 
-
 ## Made with
 
 - [Vue.js](https://vuejs.com) - JavaScript Framework
