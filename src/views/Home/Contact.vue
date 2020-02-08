@@ -11,12 +11,12 @@
                 <input type="email" v-model="mail" placeholder="E-Mail-Adresse" />
                 <textarea v-model="message" placeholder="Nachricht" />
                 <small>
-                    Diese Seite wird durch reCAPTCHA geschützt und die Google
+                    Diese Seite wird durch reCAPTCHA geschützt. Die
                     <a
                         href="https://policies.google.com/privacy"
                         target="_blank"
-                    >Datenschutzerklärung</a> sowie deren
-                    <a href="https://policies.google.com/terms" target="_blank">Geschäftsbedingungen</a> sind gültig.
+                    >Datenschutzerklärung</a> und die
+                    <a href="https://policies.google.com/terms" target="_blank">Nutzungsbedingungen</a> von Google gelten.
                 </small>
                 <div class="button-wrapper">
                     <p class="button" @click="submit">
@@ -58,7 +58,7 @@ export default {
                 recaptchaToken: await this.recaptchaToken()
             }
 
-            let response = await fetch('https://a7cug9jwkl.execute-api.us-east-1.amazonaws.com/dev/', {
+            let response = await fetch('https://xmx4sz2d51.execute-api.us-east-1.amazonaws.com/prod/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(requestData)
