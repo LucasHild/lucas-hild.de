@@ -28,7 +28,7 @@
                             <li>MongoDB</li>
                         </ul>
                         <ul>
-                            <li>HTML, CSS & JS</li>
+                            <li>HTML, CSS & TypeScript</li>
                             <li>Vue.js</li>
                             <li>React</li>
                             <li>GraphQL</li>
@@ -52,7 +52,7 @@ export default {
 
     computed: {
         wrenchSVGBlue() {
-            return this.wrenchSVG.replace('black', getComputedStyle(document.documentElement).getPropertyValue('--primary-color'))
+            return this.wrenchSVG.replace('black', 'rgb(21, 144, 219)')
         }
     }
 }
