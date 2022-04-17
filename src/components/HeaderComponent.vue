@@ -10,7 +10,7 @@
 
             <div class="social">
                 <a
-                    href="https://github.com/Lanseuo"
+                    href="https://github.com/LucasHild"
                     title="GitHub"
                     target="_blank"
                     rel="noopener noreferrer"
